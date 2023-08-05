@@ -1,4 +1,5 @@
 @import 'navbar';
+@import 'hero';
 
 * {
     box-sizing: border-box;
@@ -7,48 +8,11 @@
     font-family: 'Albert Sans', sans-serif;
 }
 
-// Hero Section CSS
-.hero {
+body {
     background-color: $bg-color;
-
-    &__container {
-        /* code */
-
-        @include tablet{
-            /*code here */
-        }
-
-        @include mobile{
-            /*code here */
-        }
-
-        &--center {
-            width:100%;
-            /*code here */
-            @include mobile{
-                /*code here */
-            }
-        }
-
-        &--center h1 {
-            /*code here */
-            @include mobile{
-                /*code here */
-            }
-        }
-
-        &--center h4 {
-            /*code here */
-            @include mobile{
-                /*code here */
-            }
-        }
-
-        &--center h6 {
-            /*code here */
-            @include mobile{
-                /*code here */
-            }
-        }
-    }
 }
+
+main{
+    padding: 0 99px;
+}
+

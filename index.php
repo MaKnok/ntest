@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap" rel="stylesheet">
     <title>Frontend test</title>
 </head>
 
@@ -15,74 +18,90 @@
         <!-- Navbar section -->
         <nav class="navbar">
             <div class="navbar__logo">
-                <a href="/">LOGO</a>
+                <a href="/"><img src="./styles/images/logo.png" alt="logo"></a>
             </div>
             <div class="navbar__actions">
-                <button type="button" class="navbar__actions--btn--search">
+                <button type="button" class="navbar__actions__btn__search">
                     <span>Søk</span>
-                    <div class="navbar__search">
+                    <div class="navbar__actions__btn__search--icon">
                        <img src="./styles/icons/icon_search.png" alt="search">
                     </div>
                 </button>
-                <button type="button" class="navbar__actions--btn--login">
-                    <span>Logg inn</span>
-                    <div class="navbar__login">
-                       <img src="./styles/icons/icon_profile_circled.png" alt="profile">
-                    </div>
-                </button>
-                <button type="button" class="navbar__actions--btn--menu" data-toggle="collapse" data-target="#">
-                    <span>Meny</span>
-                    <div class="navbar__bars">
-                       <img src="./styles/icons/hamburger.png" alt="bars">
-                    </div>
-                </button>
+                <div class="navbar__actions__btn">
+                    <button type="button" class="navbar__actions__btn__login">
+                        <span>Logg inn</span>
+                        <div class="navbar__actions__btn__login--icon">
+                            <img src="./styles/icons/icon_profile_circled.png" alt="profile">
+                        </div>
+                    </button>
+                </div>
+                <div class="navbar__actions__btn">
+                    <button type="button" class="navbar__actions__btn__menu" data-toggle="collapse" data-target="#">
+                        <span>Meny</span>
+                        <div class="navbar__actions__btn__menu--icon">
+                            <img src="./styles/icons/hamburger.png" alt="bars">
+                        </div>
+                    </button>
+                </div>
             </div>
         </nav>
         <!-- End of Navbar section -->
     </header>
 
     <main>
-
         <!-- Hero section -->
         <section class="hero">
             <div class="hero__container">
-                <figure class="hero__container--center-img">
-                    <img src="./styles/images/hero_img.png" alt="hero-img"/>
-                </figure>
-                <div class="hero__container--center">
-                    <h1>Allskog er et samvirke av og for skogeiere</h1>
-                    <h4>Vi er en robust organisasjon med høy kompetanse innen alle skogtjenester du trenger som skogeier.</h4>
-                    <div>
-                        <img src="./styles/icons/arrow.png">
-                        <h6>Skogtjenester</h6>
+                <div class="hero__container--center-img">
+                    
+                </div>
+                <div class="hero__container__center">
+
+                    <div class="hero__container__center__title">
+                        <h1>Allskog er et samvirke av og for skogeiere</h1>
+                        <h4>Vi er en robust organisasjon med høy kompetanse innen alle skogtjenester du trenger som skogeier.</h4>
                     </div>
-                    <div>
-                        <img src="./styles/icons/arrow.png">
-                        <h6>Veiledning</h6>
-                    </div>
-                    <div> 
-                        <img src="./styles/icons/arrow.png">
-                        <h6>Bli andelseier</h6>
-                    </div>
-                    <div>
-                        <img src="./styles/icons/arrow.png">
-                        <h6>Finn skogbruksleder</h6>
-                    </div>
-                    <div>
-                        <img src="./styles/icons/arrow.png">
-                        <h6>Om Allskog</h6>
-                    </div>
-                    <div>
-                        <img src="./styles/icons/arrow.png">
-                        <h6>Bærekraft og miljø</h6>
-                    </div>
-                    <div>
-                        <img src="./styles/icons/arrow.png">
-                        <h6>Arrangementer</h6>
-                    </div>
-                    <div>
-                        <img src="./styles/icons/arrow.png">
-                        <h6>Aktuelt</h6>
+
+                    <div class="hero__container__center__list">
+
+                        <div class="hero__container__center__list__col">
+                        <div class="hero__container__center____list__col--item">
+                            <img src="./styles/icons/arrow.png">
+                            <h6>Skogtjenester</h6>
+                        </div>
+                        <div class="hero__container__center__list__col--item">
+                            <img src="./styles/icons/arrow.png">
+                            <h6>Veiledning</h6>
+                        </div>
+                        <div class="hero__container__center__list__col--item"> 
+                            <img src="./styles/icons/arrow.png">
+                            <h6>Bli andelseier</h6>
+                        </div>
+                        <div class="hero__container__center__list__col--item">
+                            <img src="./styles/icons/arrow.png">
+                            <h6>Finn skogbruksleder</h6>
+                        </div>
+                        </div>
+
+                        <div class="hero__container__center__list__col">
+                        <div class="hero__container__center__list__col--item">
+                            <img src="./styles/icons/arrow.png">
+                            <h6>Om Allskog</h6>
+                        </div>
+                        <div class="hero__container__center__list__col--item">
+                            <img src="./styles/icons/arrow.png">
+                            <h6>Bærekraft og miljø</h6>
+                        </div>
+                        <div class="hero__container__center__list__col--item">
+                            <img src="./styles/icons/arrow.png">
+                            <h6>Arrangementer</h6>
+                        </div>
+                        <div class="hero__container__center__list__col--item">
+                            <img src="./styles/icons/arrow.png">
+                            <h6>Aktuelt</h6>
+                        </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

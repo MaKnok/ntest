@@ -1,0 +1,115 @@
+@import 'colors';
+@import 'media-queries';
+
+// Hero Section CSS
+.hero {
+    &__container {
+    /* code */
+
+        @include tablet{
+            /*code here */
+        }
+
+        @include mobile{
+            /*code here */
+        }
+
+        &--center-img{
+            background: rgb(211,211,211, 0.5) url("./images/hero_img.png") no-repeat;
+            background-size: cover;
+            height: 447.195px;
+        }
+
+        &__center {
+            width: 866.352px;
+            height: 692px;
+            flex-shrink: 0;
+            background-color: transparent;
+            position:absolute;
+            top: 429.86px;
+            left: 256.54px;
+            
+            z-index: 100;
+
+            &__title {
+
+                width: 650px;
+                height: 334px;
+                background-color: $bg-color;
+                padding: 60px 60px 0 60px;
+                display: inline-flex;
+                flex-direction: column;
+                gap: 36px;
+
+                & h1 {
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+    
+                    @include mobile{
+                        /*code here */
+                    }
+                }
+                & h4 {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 160%; 
+                  
+                    @include mobile{
+                        /*code here */
+                    }
+                }
+            }
+
+            &__list {
+                width: 806px;
+                height: 288px;
+                display: inline-flex;
+                align-items: flex-start;
+                gap: 60px;
+                margin-top: 222px;
+    
+                &__col{
+    
+                    &--item {
+    
+                        &:first-child{
+                            border-top: 2px solid $color-text;
+                        }
+    
+                        display: flex;
+                        width: 373px;
+                        padding: 18px 16px;
+                        align-items: center;
+                        gap: 16px;
+                        border-bottom: 2px solid $color-text;
+        
+                        & img{
+                            width: 36px;
+                        }
+        
+                        & h6 {
+                            color: $color-text;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 160%;
+                        }
+                    }
+    
+                }
+    
+                @include mobile{
+                    /*code here */
+                }
+            }
+
+            @include mobile{
+                /*code here */
+                }
+        }
+
+    }
+}
