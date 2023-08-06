@@ -21,14 +21,12 @@
         }
 
         &__center {
-            width: 866.352px;
-            height: 692px;
+            width: 866px;
             flex-shrink: 0;
             background-color: transparent;
             position:absolute;
-            top: 429.86px;
-            left: 256.54px;
-            
+            top: 430px;
+            left: 257px;
             z-index: 100;
 
             &__title {
@@ -64,12 +62,13 @@
             }
 
             &__list {
-                width: 806px;
-                height: 288px;
+                width: auto;
+                height: auto;
                 display: inline-flex;
                 align-items: flex-start;
                 gap: 60px;
-                margin-top: 222px;
+                margin-top: 70px;
+                margin-left: 60px;
     
                 &__col{
     

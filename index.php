@@ -65,41 +65,41 @@
                     <div class="hero__container__center__list">
 
                         <div class="hero__container__center__list__col">
-                        <div class="hero__container__center____list__col--item">
-                            <img src="./styles/icons/arrow.png">
-                            <h6>Skogtjenester</h6>
-                        </div>
-                        <div class="hero__container__center__list__col--item">
-                            <img src="./styles/icons/arrow.png">
-                            <h6>Veiledning</h6>
-                        </div>
-                        <div class="hero__container__center__list__col--item"> 
-                            <img src="./styles/icons/arrow.png">
-                            <h6>Bli andelseier</h6>
-                        </div>
-                        <div class="hero__container__center__list__col--item">
-                            <img src="./styles/icons/arrow.png">
-                            <h6>Finn skogbruksleder</h6>
-                        </div>
+                            <div class="hero__container__center__list__col--item">
+                                <img src="./styles/icons/arrow.png">
+                                <h6>Skogtjenester</h6>
+                            </div>
+                            <div class="hero__container__center__list__col--item">
+                                <img src="./styles/icons/arrow.png">
+                                <h6>Veiledning</h6>
+                            </div>
+                            <div class="hero__container__center__list__col--item"> 
+                                <img src="./styles/icons/arrow.png">
+                                <h6>Bli andelseier</h6>
+                            </div>
+                            <div class="hero__container__center__list__col--item">
+                                <img src="./styles/icons/arrow.png">
+                                <h6>Finn skogbruksleder</h6>
+                            </div>
                         </div>
 
                         <div class="hero__container__center__list__col">
-                        <div class="hero__container__center__list__col--item">
-                            <img src="./styles/icons/arrow.png">
-                            <h6>Om Allskog</h6>
-                        </div>
-                        <div class="hero__container__center__list__col--item">
-                            <img src="./styles/icons/arrow.png">
-                            <h6>Bærekraft og miljø</h6>
-                        </div>
-                        <div class="hero__container__center__list__col--item">
-                            <img src="./styles/icons/arrow.png">
-                            <h6>Arrangementer</h6>
-                        </div>
-                        <div class="hero__container__center__list__col--item">
-                            <img src="./styles/icons/arrow.png">
-                            <h6>Aktuelt</h6>
-                        </div>
+                            <div class="hero__container__center__list__col--item">
+                                <img src="./styles/icons/arrow.png">
+                                <h6>Om Allskog</h6>
+                            </div>
+                            <div class="hero__container__center__list__col--item">
+                                <img src="./styles/icons/arrow.png">
+                                <h6>Bærekraft og miljø</h6>
+                            </div>
+                            <div class="hero__container__center__list__col--item">
+                                <img src="./styles/icons/arrow.png">
+                                <h6>Arrangementer</h6>
+                            </div>
+                            <div class="hero__container__center__list__col--item">
+                                <img src="./styles/icons/arrow.png">
+                                <h6>Aktuelt</h6>
+                            </div>
                         </div>
 
                     </div>
@@ -108,178 +108,229 @@
         </section>
         <!-- End of Hero section -->
 
-        <!-- Numbers section -->
-        <section class="numbers">
-            <div class="numbers__container">
-                <div class="numbers__container--box">
-                    <h1>70</h1>
-                    <span>skogeierlag</span>
-                </div>
-                <div class="numbers__container--box">
-                    <h1>7600</h1>
-                    <span>andelseiere</span>
-                </div>
-                <div class="numbers__container--box">
-                    <h1>1 million</h1>
-                    <span>m3 tømmer per år</span>
-                </div>
-            </div>
-        </section>
-        <!-- End of Numbers section -->
+        <!-- Info section -->
+        <section class="info-sections">
 
-        <!-- Search section -->
-        <section class="search">
-            <div class="search__container">
-                <div class="search__container--box">
-                    <h3>Finn din skogbruksleder</h3>
-                    <p>Søk etter postnummer, region eller fylke</p>
-                    <input type="text" placeholder="Skriv søkeord">
-                    <button type="button" class="search__actions--btn--search">
-                        <span>Søk</span>
-                        <div class="search__search">
-                            <img src="./styles/icons/icon_search_white.png" alt="search">
+             <!-- Numbers section -->
+            <section class="numbers">
+                <div class="numbers__container">
+                <div class="numbers__container__box">
+                    <div class="numbers__container__box--item">
+                        <h1>70</h1>
+                    </div>
+                    <div class="numbers__container__box--item">
+                        <span>skogeierlag</span>
+                    </div>
+                </div>
+                <div class="numbers__container__box">
+                    <div class="numbers__container__box--item">
+                        <h1>7600</h1>
+                    </div>
+                    <div class="numbers__container__box--item">
+                        <span>andelseiere</span>
+                    </div>
+                </div>
+                <div class="numbers__container__box">
+                    <div class="numbers__container__box--item">
+                        <h1>1 million</h1>
+                    </div>
+                    <div class="numbers__container__box--item">
+                        <span>m3 tømmer per år</span>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- End of Numbers section -->
+
+            <!-- Search section -->
+            <section class="search">
+                <div class="search__container">
+                    <div class="search__container--description">
+                        <h3>Finn din skogbruksleder</h3>
+                        <p>Søk etter postnummer, region eller fylke</p>
+                    </div>
+                    <div class="search__container__search">
+                        <div class="search__container__search__wrapper">
+                            <div class="search__container__search__wrapper__input">
+                                <input type="text" placeholder="Skriv søkeord">
+                                <div class="search__container__search__wrapper__input__button">
+                                    <button type="button">
+                                        <span>Søk</span>
+                                        <div class="search__search">
+                                            <img src="./styles/icons/icon_search_white.png" alt="search">
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </button>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- End of Search section -->
+            </section>
+            <!-- End of Search section -->
 
-        <!-- Wood section -->
-        <section class="wood">
+            <!-- Wood section -->
+            <section class="wood">
             <div class="wood__container">
                 <figure>
-                    <img src="./styles/images/wood.png" alt="wood-img"/>
                 </figure>
                 <div class="wood__container--box">
-                    <h3>Lyst til å bli andelseier i Allskog?</h3>
+                    <h3>Lyst til å bli andelseier i </br>Allskog?</h3>
                     <p>Hvis du eier skog, kan du melde deg inn i Allskog. Da blir du medeier av skogfellesskapet i Norge.</p>
                     <a><img src="./styles/icons/arrow.png"></a>
                 </div>
             </div>
-        </section>
-        <!-- End of Wood section -->
+            </section>
+            <!-- End of Wood section -->
 
-        <!-- Info01 section -->
-        <section class="info01">
-            <div class="info01__container">
-                <div class="info01__container--box">
+            <!-- Info01 section -->
+            <section class="info01">
+                <div class="info01__container">
+                <div class="info01__container__box">
                     <h4>Skal du plante ny skog?</h4>
-                    <p>Etter hogst skal det plantes innen tre år. Skal du plante selv denne sesongen, må du bestille planter innen 15. april.</p>
-                    <img src="./styles/icons/arrow.png">
+                    <div class="info01__container__box--desc">
+                        <p>Etter hogst skal det plantes innen tre år. Skal du plante selv denne sesongen, må du bestille planter innen 15. april.</p>
+                        <img src="./styles/icons/arrow.png">
+                    </div>
                 </div>
-                <div class="info01__container--box">
+                <div class="info01__container__box">
                     <h4>Er skogen moden for hogst? Avtal hogst nå.</h4>
-                    <p>Vurderer du å ta ut tømmer fra skogen din? Ta gjerne en prat med en av våre dyktige skogbruksledere. Fra oss i Allskog får du solid veiledning, basert på skogfaglig erfaring og kunnskap.</p>
-                    <img src="./styles/icons/arrow.png">
+                    <div class="info01__container__box--desc">
+                        <p>Vurderer du å ta ut tømmer fra skogen din? Ta gjerne en prat med en av våre dyktige skogbruksledere. Fra oss i Allskog får du solid veiledning, basert på skogfaglig erfaring og kunnskap.</p>
+                        <img src="./styles/icons/arrow.png">
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- End of Info01 section -->
+                </div>
+            </section>
+            <!-- End of Info01 section -->
 
-        <!-- Info02 section -->
-        <section class="info02">
-            <div class="info02__container">
+            <!-- Info02 section -->
+            <section class="info02">
+                <div class="info02__container">
                 <h3>Nyheter</h3>
-                <div class="info02__container--box">
-                    <figure>
-                        <img src="./styles/images/pic01.png" alt="pic-01">
-                        <figcaption>17.april 2023</figcaption>
-                    </figure>
-                    <h4>Går med rekordoverskudd: – Skogeiere har vært lojale til samvirket</h4>
-                    <p>Allskog legger bak seg et av mest innbringende år noensinne som konsern. For femte år på rad kan 7 500 skogeiere nord for Stad og Dovre få utbetalt utbytte fra samvirket.</p>
-                    <img src="./styles/icons/arrow.png">
-                </div>
-                <div class="info02__container--box">
-                    <figure>
-                        <img src="./styles/images/pic02.png" alt="pic-02">
-                        <figcaption>17.april 2023</figcaption>
-                    </figure>
-                    <h4>Bruk rabatten din på kurs i norsk pefc skogstandard</h4>
-                    <p>Skal du hogge selv og levere tømmer? Nå får alle som driver i skogen tilbud om kurs i den nye skogstandarden. Som andelseier i ALLSKOG får du kurset til rabattert pris.</p>
-                    <img src="./styles/icons/arrow.png">
-                </div>
-                <div class="info02__container--box">
-                    <figure>
-                        <img src="./styles/images/pic03.png" alt="pic-03">
-                        <figcaption>17.april 2023</figcaption>
-                    </figure>
-                    <h4>Dette bør du vite om nye miljøhensyn i skogen</h4>
-                    <p>Alt tømmer som ALLSKOG omsetter, er miljøsertifisert etter Norsk PEFC Skogstandard. Industrien og for forbrukerne skal vite at virket kommer fra skog drevet på bærekraftig vis.</p>
-                    <img src="./styles/icons/arrow.png">
-                </div>
-                <button type="button" class="info02__--btn">
-                    <span>Se alle nyheter</span>
-                </button>
-            </div>
-        </section>
-        <!-- End of Info02 section -->
-
-        <!-- Info03 section -->
-        <section class="info03">
-            <div class="info03__container">
-                <h3>Kommende arrangementer</h3>
-                <div class="info03__container--box">
-                    <div>
-                        <span>9. mai</span>
-                        <p>Temakveld: Etablering av nytt sagbruk i Vefsn</p>
-                    </div>
-
-                    <div>
-                        <p>Vefsn skogeierlag inviterer til temakveld, etablering av nytt sagbruk i Vefsn.</p>
-                        <div>
-                            <img src="./styles/icons/local.png">
-                            <p>Mosjøen videregående skole avd. Marka (Landbruksskolen)<p>
-                        </div>
-                        <div>
-                            <img src="./styles/icons/calendar.png">
-                            <p>9. mai<p>
-                        </div>
-                        <div>
-                            <img src="./styles/icons/clock.png">
-                            <p>Kl. 19.00 - 21.00<p>
+                <div class="info02__container__wr">
+                    <div class="info02__container__wr__box">
+                        <figure class='fig01'>
+                            <img src="./styles/images/pic01.png" alt="pic-01">
+                        </figure>
+                        <div class="info02__container__wr__box__desc">
+                            <div class="info02__container__wr__box__desc--column">
+                                <h5>17.april 2023</h5>
+                                <h4>Går med rekordoverskudd: – Skogeiere har vært lojale til samvirket</h4>
+                            </div>
+                            <p>Allskog legger bak seg et av mest innbringende år noensinne som konsern. For femte år på rad kan 7 500 skogeiere nord for Stad og Dovre få utbetalt utbytte fra samvirket.</p>
+                            <img src="./styles/icons/arrow.png">
                         </div>
                     </div>
-
-                    <div>
-                        <img src="./styles/icons/arrow.png">
+                    <div class="info02__container__wr__box">
+                        <figure class='fig02'>
+                            <img src="./styles/images/pic02.png" alt="pic-02">
+                        </figure>
+                        <div class="info02__container__wr__box__desc">
+                            <div class="info02__container__wr__box__desc--column">
+                                <h5>17.april 2023</h5>
+                                <h4>Bruk rabatten din på kurs i norsk pefc skogstandard</h4>
+                            </div>
+                            <p>Skal du hogge selv og levere tømmer? Nå får alle som driver i skogen tilbud om kurs i den nye skogstandarden. Som andelseier i ALLSKOG får du kurset til rabattert pris.</p>
+                            <img src="./styles/icons/arrow.png">
+                        </div>
                     </div>
+                    <div class="info02__container__wr__box">
+                        <figure class='fig03'>
+                            <img src="./styles/images/pic03.png" alt="pic-03">
+                        </figure>
+                        <div class="info02__container__wr__box__desc">
+                            <div class="info02__container__wr__box__desc--column">
+                                <h5>17.april 2023</h5>
+                                <h4>Dette bør du vite om nye miljøhensyn i skogen</h4>
+                            </div>
+                            <p>Alt tømmer som ALLSKOG omsetter, er miljøsertifisert etter Norsk PEFC Skogstandard. Industrien og for forbrukerne skal vite at virket kommer fra skog drevet på bærekraftig vis.</p>
+                            <img src="./styles/icons/arrow.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="info02__container--btn">
+                    <button type="button">
+                        <span>Se alle nyheter</span>
+                    </button>
+                </div>
+                </div>
+            </section>
+            <!-- End of Info02 section -->
+
+            <!-- Info03 section -->
+            <section class="info03">
+                <div class="info03__container">
+                    <h3>Kommende arrangementer</h3>
+                    <div class="info03__container__wr">
+                        <div class="info03__container__wr__box">
+                        <div class="info03__container__wr__box__box01">
+                            <span>9. mai</span>
+                            <p>Temakveld: Etablering av nytt sagbruk i Vefsn</p>
+                        </div>
+
+                        <div class="info03__container__wr__box__box02">
+                            <p>Vefsn skogeierlag inviterer til temakveld, etablering av nytt sagbruk i Vefsn.</p>
+                            <div class="info03__container__wr__box__box02__local-date">
+                                <div class="local-date-wr">
+                                    <img src="./styles/icons/local.png">
+                                    <p class="local">Mosjøen videregående skole avd. Marka (Landbruksskolen)<p>
+                                </div>
+                                <div class="local-date-wr">
+                                    <img src="./styles/icons/calendar.png">
+                                    <p class="date">9. mai<p>
+                                </div>
+                                <div class="local-date-wr">
+                                    <img src="./styles/icons/clock.png">
+                                    <p class="time">Kl. 19.00 - 21.00<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info03__container__wr__box__box03">
+                            <img src="./styles/icons/arrow.png">
+                        </div>
                     
-                </div>
-                <div class="info03__container--box">
-                    <div>
-                        <span>24. -25. mai</span>
-                        <p>Elgbeitetaksering i Hattfjelldal, 24. og 25. mai 2023</p>
-                    </div>
+                        </div>
+                        <div class="info03__container__wr__box">
+                        <div class="info03__container__wr__box__box01">
+                            <span>24. -25. mai</span>
+                            <p>Elgbeitetaksering i Hattfjelldal, 24. og 25. mai 2023</p>
+                        </div>
 
-                    <div>
-                        <p>Kurset bygger på «Veileder og standard for taksering av elgbeite i skog» – utviklet av Skogkurs</p>
-                        <div>
-                            <img src="./styles/icons/local.png">
-                            <p>Fjellfolkets Hus, Adr. Hattfjelldalsvollen 1, Hattfjelldal.<p>
+                        <div class="info03__container__wr__box__box02">
+                            <p>Kurset bygger på «Veileder og standard for taksering av elgbeite i skog» – utviklet av Skogkurs</p>
+                            <div class="info03__container__wr__box__box02__local-date">
+                            <div class="local-date-wr">
+                                <img src="./styles/icons/local.png">
+                                <p class="local">Fjellfolkets Hus, Adr. Hattfjelldalsvollen 1, Hattfjelldal.<p>
+                            </div>
+                            <div class="local-date-wr">
+                                <img src="./styles/icons/calendar.png">
+                                <p class="date">Onsdag 24. mai og torsdag 25. mai<p>
+                            </div>
+                            <div class="local-date-wr">
+                                <img src="./styles/icons/clock.png">
+                                <p class="time">Kl. 09.00-15.00 begge dager<p>
+                            </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src="./styles/icons/calendar.png">
-                            <p>Onsdag 24. mai og torsdag 25. mai<p>
+
+                        <div class="info03__container__wr__box__box03">
+                            <img src="./styles/icons/arrow.png">
                         </div>
-                        <div>
-                            <img src="./styles/icons/clock.png">
-                            <p>Kl. 09.00-15.00 begge dager<p>
                         </div>
                     </div>
-
-                    <div>
-                        <img src="./styles/icons/arrow.png">
+                    <div class="info03__container--btn">
+                        <button type="button">
+                            <span>Se alle arrangementer</span>
+                        </button>
                     </div>
                 </div>
-                <button type="button" class="info03__--btn">
-                    <span>Se alle arrangementer</span>
-                </button>
-            </div>
+            </section>
+            <!-- End of Info03 section -->
+
         </section>
-        <!-- End of Info03 section -->
-
-        
+        <!-- End of Info section -->
     </main>
 
     <footer>
