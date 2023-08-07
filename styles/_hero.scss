@@ -5,104 +5,155 @@
 .hero {
     &__container {
 
-        @include mobile{
-            /*code here */
-        }
-
         &--center-img{
-            background: rgb(211,211,211, 0.5) url("./images/hero_img.png") no-repeat;
-            background-size: cover;
-            height: 447.195px;
+
+            background: rgb(211,211,211, 0.5) url("./images/hero-mobile.png") no-repeat;
+                background-size: cover;
+                width: 342px;
+                height: 385.406px;
+                flex-shrink: 0;
+
+            @include tablet-desktop {
+                background: rgb(211,211,211, 0.5) url("./images/hero_img.png") no-repeat;
+                background-size: cover;
+                width: 1240.241px;
+                height: 447.195px;
+            }
+            
         }
 
         &__center {
-            width: 866px;
-            flex-shrink: 0;
-            background-color: transparent;
+
             position:absolute;
-            top: 430px;
-            left: 257px;
+            width: 318px;
             z-index: 100;
+            background-color: transparent;
+            top: 356px;
+            left: 9%; 
+            
+
+            @include tablet-desktop {
+                width: 866px;
+                flex-shrink: 0;
+                top: 430px;
+                left: 257px;
+            }
 
             &__title {
 
-                width: 650px;
-                height: 334px;
                 background-color: $bg-color;
-                padding: 60px 60px 0 60px;
-                display: inline-flex;
+                width: 318px;
+                padding: 30px 30px 0px 30px;
+                display: flex;
                 flex-direction: column;
-                gap: 36px;
+                align-items: flex-start;
+                gap: 16px;
+                
+                @include tablet-desktop{
+                    width: 650px;
+                    padding: 60px 60px 0 60px;
+                    display: inline-flex;
+                    flex-direction: column;
+                    gap: 36px;
+                }
 
                 & h1 {
-                    font-size: 48px;
+
+                    font-size: 28px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 130%;
-    
-                    @include mobile{
-                        /*code here */
+                    
+                    @include tablet-desktop{
+                        font-size: 48px;
                     }
                 }
+
                 & h4 {
-                    font-size: 24px;
+                    font-size: 20px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 160%; 
                   
-                    @include mobile{
-                        /*code here */
+                    @include tablet-desktop{
+                        font-size: 24px;
                     }
                 }
             }
 
             &__list {
-                width: auto;
-                height: auto;
+
                 display: inline-flex;
+                flex-direction: column;
                 align-items: flex-start;
-                gap: 60px;
-                margin-top: 70px;
-                margin-left: 60px;
+                margin: 31.27px 30px 0 30px;
+
+                @include tablet-desktop {
+                    flex-direction: row;
+                    gap: 60px;
+                    margin-top: 70px;
+                    margin-left: 60px;
+                }
     
                 &__col{
+
+                    &:first-child {
+                        border-top: 2px solid $color-text;
+
+                        @include tablet-desktop {
+                            border-top: 0;
+                        }
+                    }
     
                     &--item {
     
                         &:first-child{
-                            border-top: 2px solid $color-text;
+                            @include tablet-desktop{
+                                border-top: 2px solid $color-text;
+                            }
                         }
-    
+
                         display: flex;
-                        width: 373px;
-                        padding: 18px 16px;
+                        width: 246px;
+                        padding: 16px 8px;
                         align-items: center;
-                        gap: 16px;
+                        gap: 12px;
                         border-bottom: 2px solid $color-text;
+
+                        @include tablet-desktop {
+                            width: 373px;
+                            padding: 18px 16px;
+                            gap: 16px;
+                        }
         
                         & img{
-                            width: 36px;
+
+                            width: 24px;
+
+                            @include tablet-desktop {
+                                font-size: 36px;
+                            }
+
                         }
         
                         & h6 {
-                            color: $color-text;
-                            font-size: 18px;
+                            font-size: 16px;
                             font-style: normal;
                             font-weight: 500;
                             line-height: 160%;
+                            color: $color-text;
+
+                            @include tablet-desktop {
+                                font-size: 18px;
+                            }
+
                         }
                     }
     
                 }
-    
-                @include mobile{
-                    /*code here */
-                }
+
             }
 
-            @include mobile{
-                /*code here */
-                }
         }
 
     }

@@ -1,11 +1,6 @@
-@mixin tablet{
-    @media screen and (max-width:768px){
-        @content;
-    }
-}
 
-@mixin mobile{
-    @media screen and (max-width:390px){
+@mixin tablet-desktop{
+    @media screen and (min-width:768px){
         @content;
     }
 }

@@ -3,13 +3,19 @@
 <html lang="sv">
 
 <head>
+    <!--Genenal Config-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Style -->
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap" rel="stylesheet">
+
     <title>Frontend test</title>
     
     <!--jQuery-->
@@ -19,7 +25,12 @@
     </script>
     <script>
         $(document).ready(function(){
-
+            $('#open-menu').click(function(){
+                $('.menu').addClass('active');
+            });
+            $('#close-menu').click(function(){
+                $('.menu').removeClass('active');
+            });
         });
     </script>
 
@@ -27,16 +38,90 @@
 
 <body>
 
-    <aside class="menu-popup">
-        <h1>This is a modal</h1>
-        <button type="button" class="close-menu">
-            Close
-        </button>
+    <!-- Menu content -->
+    <aside class="menu">
+        <nav class="menu__navbar" role="navigation">
+            <div class="menu__navbar__logo">
+                <img src="./styles/images/logo.png" alt="Logo">
+            </div>
+            <div class="menu__navbar__btn">
+                <button type="button" class="menu__navbar__btn--close-menu" id="close-menu">
+                    <span>Lukk</span>
+                    <div class="close-icon">
+                        <img src="./styles/icons/close.png" alt="bars">
+                    </div>
+                </button>
+            </div>
+        </nav>
+        <section class="menu__content">
+
+            <div class="menu__content__items">
+                <div class="menu__content__items__box">
+                    <div class="menu__content__items__box__title">
+                        <span class="title-items">Skogtjenester</span>
+                    </div>
+                    <div class="menu__content__items__box__wr">
+                        <span class="item-option">Skogbruksplanlegging</span>
+                        <span class="item-option">Skogsdrift, hogst og tømmersalg</span>
+                        <span class="item-option">Hjelp til tømmeroppgjør</span>
+                        <span class="item-option">Skogkultur, planting og pleie</span>
+                        <span class="item-option">Frivillig vern av skog</span>
+                        <span class="item-option">Reguleringsplan for areal</span>
+                    </div>
+                </div>
+                <div class="menu__content__items__box">
+                    <div class="menu__content__items__box__title">
+                        <span class="title-items">Bli andelseier</span>
+                    </div>
+                    <div class="menu__content__items__box__wr">
+                        <span class="item-option">Skogeierlag</span>
+                        <span class="item-option">Skogforsikring</span>
+                        <span class="item-option">Tømmertransport</span>
+                        <span class="item-option">Kartlegging av eiendom</span>
+                    </div>
+                </div>
+                <div class="menu__content__items__box">
+                    <div class="menu__content__items__box__title">
+                        <span class="title-items">Bærekraft og miljø</span>
+                    </div>
+                    <div class="menu__content__items__box__wr">
+                        <span class="item-option">Sertifisering av tømmer</span>
+                        <span class="item-option">Miljøkrav</span>
+                        <span class="item-option">Biologisk mangfold</span>
+                        <span class="item-option">Skog og klima</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu__content__bottom">
+                <div class="menu__content__bottom__box">
+                    <div class="menu__content__bottom__box__items">
+                        <div class="menu__content__bottom__box__items__wr">
+                            <span class="title-items">Finn din skogbruksleder</span>
+                            <span class="title-items">Om Allskog</span>
+                        </div>
+                        <div class="menu__content__bottom__box__items__wr">
+                            <span class="title-items">Arrangementer</span>
+                            <span class="title-items">Aktuelt</span>
+                        </div>
+                    </div>
+                    <div class="menu__content__bottom__box__button">
+                        <button type="button" class="menu__content__bottom__box__button__login">
+                            <span>Logg inn</span>
+                            <div class="menu__content__bottom__box__button__login--icon">
+                                <img src="./styles/icons/icon_profile_circled.png" alt="profile">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </aside>
 
     <header>
         <!-- Navbar section -->
-        <nav class="navbar">
+        <nav class="navbar" role="navigation">
             <div class="navbar__logo">
                 <a href="/"><img src="./styles/images/logo.png" alt="logo"></a>
             </div>
@@ -56,7 +141,7 @@
                     </button>
                 </div>
                 <div class="navbar__actions__btn">
-                    <button type="button" class="navbar__actions__btn__menu" data-toggle="collapse" data-target="#">
+                    <button type="button" class="navbar__actions__btn__menu" id="open-menu">
                         <span>Meny</span>
                         <div class="navbar__actions__btn__menu--icon">
                             <img src="./styles/icons/hamburger.png" alt="bars">
@@ -136,53 +221,52 @@
                 <div class="numbers__container">
                     <div class="numbers__container__box">
                     <div class="numbers__container__box--item">
-                        <h1>70</h1>
+                        <span class="main-number">70</span>
                     </div>
                     <div class="numbers__container__box--item">
-                        <span>skogeierlag</span>
+                        <span class="desc-number">skogeierlag</span>
                     </div>
                     </div>
                     <div class="numbers__container__box">
                     <div class="numbers__container__box--item">
-                        <h1>7600</h1>
+                        <span class="main-number">7600</span>
                     </div>
                     <div class="numbers__container__box--item">
-                        <span>andelseiere</span>
+                        <span class="desc-number">andelseiere</span>
                     </div>
                     </div>
                     <div class="numbers__container__box">
                     <div class="numbers__container__box--item">
-                        <h1>1 million</h1>
+                        <span class="main-number">1 million</span>
                     </div>
                     <div class="numbers__container__box--item">
-                        <span>m3 tømmer per år</span>
+                        <span class="desc-number">m3 tømmer per år</span>
                     </div>
                     </div>
+                </div>
+                <div class="numbers__carousel">
+                  <div class="numbers__carousel__img">
+                    <img src="./styles/icons/carousel.png" alt="numbers">
+                  </div>
                 </div>
             </section>
             <!-- End of Numbers section -->
 
             <!-- Search section -->
             <section class="search">
-                <div class="search__container">
-                    <div class="search__container--description">
-                        <h3>Finn din skogbruksleder</h3>
-                        <p>Søk etter postnummer, region eller fylke</p>
-                    </div>
-                    <div class="search__container__search">
-                        <div class="search__container__search__wrapper">
-                            <div class="search__container__search__wrapper__input">
-                                <input type="text" placeholder="Skriv søkeord">
-                                <div class="search__container__search__wrapper__input__button">
-                                    <button type="button">
-                                        <span>Søk</span>
-                                        <div class="search__search">
-                                            <img src="./styles/icons/icon_search_white.png" alt="search">
-                                        </div>
-                                    </button>
-                                </div>
+                <div class="search__description">
+                    <h3>Finn din skogbruksleder</h3>
+                    <p>Søk etter postnummer, region eller fylke</p>
+                </div>
+                <div class="search__input">
+                    <input type="text" placeholder="Skriv søkeord">
+                    <div class="search__input__btn">
+                        <button type="button">
+                            <span>Søk</span>
+                            <div class="search__input__btn__img">
+                                <img src="./styles/icons/icon_search_white.png" alt="search">
                             </div>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </section>

@@ -4,6 +4,8 @@
 @import 'footer';
 @import 'menu';
 
+@import 'media-queries';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,7 +19,12 @@ body {
 }
 
 main{
-    padding: 0 100px;
+    
+    padding: 0 24px;
+
+    @include tablet-desktop {
+        padding: 0 100px;
+    }
 }
 
 footer{

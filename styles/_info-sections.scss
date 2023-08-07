@@ -2,12 +2,19 @@
 @import 'media-queries';
 
 .info-sections {
+
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
-    margin-top: 629px;
+    gap: 48px;
+    margin-top: 728px;
     width: 100%; 
+
+    @include tablet-desktop {
+        margin-top: 629px;
+        gap: 100px;
+    }
+
 }
 
 .numbers {
@@ -15,179 +22,299 @@
     width: 100%; 
 
     &__container {
+
        display: flex;
        align-items: flex-start;
        gap: 60px;
-
+       
        &__box {
+
+         display: flex;
+         width: 342px;
          padding: 48px;
          flex-direction: column;
          align-items: flex-start;
-         gap: 24px;
          background-color: $beige;
+
+         @include tablet-desktop {
+            width: auto;
+            gap: 24px;
+         }
 
          &--item {
             width: 277px;
 
-            h1 {
-                font-size: 74px;
+            & span.main-number {
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                @include tablet-desktop {
+                    font-size: 74px;
+                }
+            }
+
+            & span.desc-number {
+                font-size: 20px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
             }
-
-            span {
-                font-size: 20px;
-            }
          }
+
        }
+    }
+
+    &__carousel {
+
+        width: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+
+        & img{
+            width: 84px;
+            height: 15px;
+            flex-shrink: 0;
+        }
+
+        @include tablet-desktop {
+            visibility: hidden;
+        }
+
     }
 }
 
 .search {
+
     display: flex;
-    padding: 100px 217px;
+    width: 342px;
+    padding: 30px 36px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 24px;
     background-color: $light-green;
-    width: 100%; 
 
-    &__container {
-       
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    @include tablet-desktop {
+        width: 100%;
+        padding: 100px 217px;
         gap: 48px;
+    }
 
-        &--description {
+    &__description {
+            
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 24px;
+            gap: 16px;
+            align-self: stretch;
+
+            @include tablet-desktop {
+                gap: 24px;
+            }
 
             & h3 {
-                font-size: 38px;
+                font-size: 24px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 130%;
+
+                @include tablet-desktop {
+                    font-size: 38px;
+                }
             }
 
             & p {
-                font-size: 20px;
+
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 160%;
+
+                @include tablet-desktop {
+                    font-size: 20px;
+                }
+            }
+    }
+
+    &__input {
+        display: flex;
+        width: 255px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+        @include tablet-desktop {
+            width: 806px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            align-self: stretch;
+            border: 2px solid $color-text;
+            background: $bg-color;
+            padding: 8px 8px 8px 24px;
+        }
+
+        & input {
+            display: flex;
+            padding: 16px 16px 16px 24px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 19px;
+            align-self: stretch;
+
+            border-radius: 12px;
+            border: 2px solid $color-text;
+            background: $bg-color;
+
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;    
+            
+            @include tablet-desktop {
+                border: 0; 
             }
         }
 
-        &__search {
+        &__btn{
             display: flex;
-            width: 806px;
-            padding: 8px 8px 8px 24px;
+            padding: 4px;
             flex-direction: column;
             align-items: flex-start;
-            gap: 19px;
+            gap: 8px;
 
-            &__wrapper {
+            & button {
                 display: flex;
-                width: 806px;
-                padding: 8px 8px 8px 24px;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 19px;
-                border: 2px solid $color-text;
-                background: $bg-color;
+                padding: 9px 16px;
+                align-items: center;
+                gap: 8px;
+                border-radius: 12px;
+                background: $color-text;
+                color: $bg-color;
+                border: 0;
 
-                &__input {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    align-self: stretch;
-                    
-                    & input {
-                        font-size: 20px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 130%; 
-                        background-color: transparent;
-                        border: none; 
-                    }
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
 
-                    &__button {
-                        display: flex;
-                        padding: 4px;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        gap: 8px;
-                        border-radius: 20px;
-                    }
+                @include tablet-desktop {
+                    padding: 15px 32px;
+                    gap: 12px;
+                }
 
-                    & button {
-                        display: flex;
-                        padding: 15px 32px;
-                        align-items: center;
-                        gap: 12px;
-                        border-radius: 16px;
-                        background-color: $color-text;
-                        color: $bg-color;
-                        border: 0;
+            }
 
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: normal;
-                    }
+            &__img {
+                display: flex;
+                width: 24px;
+                height: 24px;
+                padding: 2px;
+                justify-content: center;
+                align-items: center;
+
+                & img {
+                    width: 20px;
+                    height: 20px;
+                    flex-shrink: 0;
                 }
             }
         }
-    }
-}
+    }                                                                                                                                                                                                                                                                                                                                                                                                   
+}                                                               
+
 
 .wood {
 
-    width: 100%; 
-
     &__container {
-        display: flex;
-        align-items: center;
-        gap: -157px;
+
+        width: 342px;
+        height: 514.5px;
+
+        @include tablet-desktop {
+            width: 1240px;
+            display: flex;
+            align-items: center;
+            gap: -157px;
+        }
 
         & figure {
-            width: 590px;
-            height: 590px;
+
+            width: 346.602px;
+            height: 346.602px;
             flex-shrink: 0;
             background: rgb(211,211,211, 0.5) url("./images/wood.png") no-repeat;
             background-size: cover;
+            
+            @include tablet-desktop {
+                width: 590px;
+                height: 590px;
+            }
         }
 
         &--box {
             display: flex;
-            padding: 80px 120px;
+            width: 294px;
+            padding: 36px;
             flex-direction: column;
             align-items: flex-start;
-            gap: 24px;
-            background-color: $beige;
+            gap: 16px;
+            background: $beige;
+            position: relative; 
+            top: -179.8px;
+            left: 8%; 
+
+            @include tablet-desktop {
+                display: flex;
+                padding: 80px 120px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+                width: 807px;
+                position: relative; 
+                top: -5px;
+                left: -12.77%; 
+            }
 
             & h3 {
-                font-size: 38px;
+
+                font-size: 24px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 130%; 
-                width: 567px;
+                
+                @include tablet-desktop {
+                    font-size: 38px;
+                    width: 567px;
+                }
             }
 
             & p {
-                font-size: 20px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 160%;
-                width: 450px;
                 color: $color-text;
+
+                @include tablet-desktop {
+                    font-size: 20px;
+                    width: 450px;
+                }
+
             }
 
             & a img{
-                width: 48px;
+                width: 36px;
+                height: 36px;
+
+                @include tablet-desktop {
+                    width: 48px;
+                    height: 48px;
+                }
             }
         }
 
@@ -197,45 +324,82 @@
 
 .info01{
 
-    width: 100%; 
-
     &__container {
+
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 24px;
+        gap: 16px;
+
+        @include tablet-desktop {
+            gap: 24px;
+        }
 
         &__box{
+
             display: flex;
-            padding: 60px;
+            width: 342px;
+            padding: 36px;
+            flex-direction: column;
             align-items: flex-start;
-            gap: 60px;
+            gap: 16px;
             background-color: $light-green;
 
+            @include tablet-desktop {
+                padding: 60px;
+                gap: 60px;
+            }
+
             & h4 {
-              font-size: 28px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 130%; 
-              width: 421px;
+              
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%; 
+
+                @include tablet-desktop {
+                    font-size: 28px;
+                    width: 421px;
+                }
+              
             }
 
             &--desc {
+
                 display: flex;
-                align-items: center;
-                gap: 109px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+
+                @include tablet-desktop {
+                    
+                    align-items: center;
+                    gap: 109px;
+                }
 
                 & p {
-                    width: 482px;
-                    font-size: 20px;
+                    font-size: 16px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 160%;
+                    line-height: 160%; 
+
+                    @include tablet-desktop {
+                        width: 482px;
+                        font-size: 20px;
+                    }
+
                   }
       
                   & img {
-                      width: 48px;
-                      height: 48px;
+
+                    width: 36px;
+                    height: 36px;
+
+                    @include tablet-desktop {
+                        width: 48px;
+                        height: 48px;
+                    }
+                      
                   }
 
             }
@@ -377,7 +541,7 @@
     &__container {
 
         display: flex;
-        flex-direction: column;
+        flex-direction: column;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
         align-items: flex-start;
         gap: 36px;
 
