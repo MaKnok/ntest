@@ -5,14 +5,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap" rel="stylesheet">
     <title>Frontend test</title>
+    
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+            integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+
+        });
+    </script>
+
 </head>
 
 <body>
+
+    <aside class="menu-popup">
+        <h1>This is a modal</h1>
+        <button type="button" class="close-menu">
+            Close
+        </button>
+    </aside>
 
     <header>
         <!-- Navbar section -->
@@ -114,30 +134,30 @@
              <!-- Numbers section -->
             <section class="numbers">
                 <div class="numbers__container">
-                <div class="numbers__container__box">
+                    <div class="numbers__container__box">
                     <div class="numbers__container__box--item">
                         <h1>70</h1>
                     </div>
                     <div class="numbers__container__box--item">
                         <span>skogeierlag</span>
                     </div>
-                </div>
-                <div class="numbers__container__box">
+                    </div>
+                    <div class="numbers__container__box">
                     <div class="numbers__container__box--item">
                         <h1>7600</h1>
                     </div>
                     <div class="numbers__container__box--item">
                         <span>andelseiere</span>
                     </div>
-                </div>
-                <div class="numbers__container__box">
+                    </div>
+                    <div class="numbers__container__box">
                     <div class="numbers__container__box--item">
                         <h1>1 million</h1>
                     </div>
                     <div class="numbers__container__box--item">
                         <span>m3 tømmer per år</span>
                     </div>
-                </div>
+                    </div>
                 </div>
             </section>
             <!-- End of Numbers section -->
@@ -336,34 +356,56 @@
     <footer>
         <!-- Footer section -->
         <div class="footer__logo">
-            <a href="/">LOGO</a>
+            <a href="/">
+                <img src="./styles/images/logo.png" alt="logo">
+            </a>
         </div>
 
-        <div class="footer__address">
-            <h6>Adresse</h6>
-            <p>Ingvald Ystgaards vei 13A, 7047 Trondheim</p>
-        </div>
-
-        <div class="footer__contact">
-            <h6>Kontakt</h6>
-            <p>Telefon: 73 500 123</p>
-            <p>firmapost@allskog.no</p>
-            <p>Veibeskrivelse</p>
-        </div>
-
-        <div class="footer__social">
-            <h6>Følg oss</h6>
-            <div> 
-                <img src="./styles/icons/facebook.png">
-                <p>Facebook</p>
+        <div class="footer__data">
+            <div class="footer__data__address-contact">
+                <h6>Adresse</h6>
+                <div class="footer__data__address-contact__wr">
+                    <p>Ingvald Ystgaards vei 13A</p>
+                    <p>7047 Trondheim</p>
+                </div>
             </div>
-            <div> 
-                <img src="./styles/icons/youtube.png">
-                <p>YouTube</p>
+
+            <div class="footer__data__address-contact">
+                <h6>Kontakt</h6>
+                <div class="footer__data__address-contact__wr">
+                    <p>Telefon: 73 500 123</p>
+                    <p>firmapost@allskog.no</p>
+                    <p>Veibeskrivelse</p>
+                </div>
             </div>
-            <span>Personvern© 2013 Allskog SA</span>
+
+            <div class="footer__data__address-contact">
+                <h6>Følg oss</h6>
+                <div class="footer__data__address-contact__wr__social"> 
+                    <div class="footer__data__address-contact__wr__social--md"> 
+                        <img src="./styles/icons/facebook.png">
+                        <p>Facebook</p>
+                    </div>
+                    <div class="footer__data__address-contact__wr__social--md"> 
+                        <img src="./styles/icons/youtube.png">
+                        <p>YouTube</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="footer__copyright">
+            <div class="footer__copyright__link">
+                <a href="https://www.allskog.no/personvernerklaering-allskog-sa" target="_blank">
+                    <span>Personvern</span>
+                </a>
+            </div>
+            <div class="footer__copyright__year">
+                <span>© 2013 Allskog SA</span>
+            </div>
+            
+        </div>
+            
     </footer>
     
 </body>

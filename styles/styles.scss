@@ -1,6 +1,8 @@
 @import 'navbar';
 @import 'hero';
 @import 'info-sections';
+@import 'footer';
+@import 'menu';
 
 * {
     box-sizing: border-box;
@@ -15,6 +17,18 @@ body {
 }
 
 main{
-    padding: 0 99px;
+    padding: 0 100px;
 }
+
+footer{
+    display: flex;
+    width: 1440px;
+    padding: 120px 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+
+
 
