@@ -25,12 +25,30 @@
     </script>
     <script>
         $(document).ready(function(){
+
+            //menu
             $('#open-menu').click(function(){
                 $('.menu').addClass('active');
             });
             $('#close-menu').click(function(){
                 $('.menu').removeClass('active');
             });
+
+            //info03 title content
+            info03TitleContent();
+
+            $( window ).resize(function() {
+	            info03TitleContent();
+            });
+
+            function info03TitleContent() {
+                if($( window ).width() < 768){
+                    $("#info03-title").text("Arrangement");
+                }else{
+                    $("#info03-title").text("Kommende arrangementer");
+                }
+            }
+
         });
     </script>
 
@@ -48,7 +66,7 @@
                 <button type="button" class="menu__navbar__btn--close-menu" id="close-menu">
                     <span>Lukk</span>
                     <div class="close-icon">
-                        <img src="./styles/icons/close.png" alt="bars">
+                        <img src="./styles/icons/close.png" alt="close">
                     </div>
                 </button>
             </div>
@@ -314,7 +332,6 @@
                 <div class="info02__container__wr">
                     <div class="info02__container__wr__box">
                         <figure class='fig01'>
-                            <img src="./styles/images/pic01.png" alt="pic-01">
                         </figure>
                         <div class="info02__container__wr__box__desc">
                             <div class="info02__container__wr__box__desc--column">
@@ -327,7 +344,6 @@
                     </div>
                     <div class="info02__container__wr__box">
                         <figure class='fig02'>
-                            <img src="./styles/images/pic02.png" alt="pic-02">
                         </figure>
                         <div class="info02__container__wr__box__desc">
                             <div class="info02__container__wr__box__desc--column">
@@ -340,7 +356,6 @@
                     </div>
                     <div class="info02__container__wr__box">
                         <figure class='fig03'>
-                            <img src="./styles/images/pic03.png" alt="pic-03">
                         </figure>
                         <div class="info02__container__wr__box__desc">
                             <div class="info02__container__wr__box__desc--column">
@@ -364,15 +379,14 @@
             <!-- Info03 section -->
             <section class="info03">
                 <div class="info03__container">
-                    <h3>Kommende arrangementer</h3>
+                    <h3 id="info03-title"></h3>
                     <div class="info03__container__wr">
                         <div class="info03__container__wr__box">
-                        <div class="info03__container__wr__box__box01">
-                            <span>9. mai</span>
-                            <p>Temakveld: Etablering av nytt sagbruk i Vefsn</p>
-                        </div>
-
-                        <div class="info03__container__wr__box__box02">
+                            <div class="info03__container__wr__box__box01">
+                                <span>9. mai</span>
+                                <p>Temakveld: Etablering av nytt sagbruk i Vefsn</p>
+                            </div>
+                            <div class="info03__container__wr__box__box02">
                             <p>Vefsn skogeierlag inviterer til temakveld, etablering av nytt sagbruk i Vefsn.</p>
                             <div class="info03__container__wr__box__box02__local-date">
                                 <div class="local-date-wr">
@@ -388,12 +402,10 @@
                                     <p class="time">Kl. 19.00 - 21.00<p>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="info03__container__wr__box__box03">
-                            <img src="./styles/icons/arrow.png">
-                        </div>
-                    
+                            </div>
+                            <div class="info03__container__wr__box__box03">
+                                <img src="./styles/icons/arrow.png">
+                            </div>
                         </div>
                         <div class="info03__container__wr__box">
                         <div class="info03__container__wr__box__box01">
@@ -458,8 +470,8 @@
                 <h6>Kontakt</h6>
                 <div class="footer__data__address-contact__wr">
                     <p>Telefon: 73 500 123</p>
-                    <p>firmapost@allskog.no</p>
-                    <p>Veibeskrivelse</p>
+                    <p><a href="mailto:firmapost@allskog.no?subject='kontact'">firmapost@allskog.no</a></p>
+                    <p><a href="https://kart.1881.no?q=ALLSKOG BA" target="_blank">Veibeskrivelse</a></p>
                 </div>
             </div>
 

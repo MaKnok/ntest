@@ -6,20 +6,50 @@
     position: absolute;
     top: 0;
     width: 100%; 
-    height: 100%; 
+    height: auto; 
     z-index: 200;
+    height: 1298px;
     visibility: hidden;
 
+    @include tablet-desktop {
+        height: 1024px;
+    }
+
     &__navbar{
-        display: inline-flex;
-        padding: 48px 100px;
-        justify-content: center;
+
+        display: flex;
+        width: 390px;
+        padding: 16px 20px 16px 24px;
+        justify-content: space-between;
         align-items: center;
-        gap: 887px;
+        width: 100%;
+        height: 158px;
+
+        @include tablet-desktop {
+            display: inline-flex;
+            padding: 48px 100px;
+            justify-content: center;
+            gap: 887px;
+            width: 100%;
+            height: auto;
+        }
 
         &__logo {
-            width: 200px;
-            height: 36.437px;
+
+            & img {
+
+                width: 100px;
+                height: 18.218px;
+                flex-shrink: 0;
+    
+                @include tablet-desktop {
+                    width: 200px;
+                    height: 36.437px;
+                    visibility: hidden;
+                }
+
+            }
+           
         }
 
         &__btn {
@@ -29,53 +59,98 @@
             align-items: flex-start;
             gap: 8px;
 
+            border-radius: 20px;
+
             &--close-menu {
+
                 display: flex;
-                padding: 12px 32px;
+                padding: 9px 16px;
                 align-items: center;
                 gap: 12px;
                 background-color: $color-text;
                 border: 0;
                 border-radius: 16px;
+                color:$bg-color;
 
-                font-size: 18px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
-                color:$bg-color;
+
+                @include tablet-desktop {
+                    display: flex;
+                    padding: 12px 32px;
+                    align-items: center;
+                    gap: 12px;
+                
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                & img {
+                    width: 24px;
+                    height: 24px;
+                }
             }
         }
     }
 
     &__content {
-        padding: 123.5px 317px 276.5px 208px;
+
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 60px;
+        gap: 48px;
+        padding: 48px 111px 80px 58.3px;
+
+        @include tablet-desktop {
+            padding: 123.5px 317px 276.5px 208px;
+            gap: 60px;
+        }
 
         .title-items {
-            font-size: 22px;
+
+            font-size: 20px;
             font-style: normal;
             font-weight: 500;
             line-height: 130%;
             color: $color-text;
             text-decoration: underline;
+
+            @include tablet-desktop {
+                font-size: 22px;
+            }
+            
         }
 
         &__items {
+
            display: flex;
+           flex-direction: column;
            align-items: flex-start;
-           gap: 60px;
+           gap: 48px;
+
+           @include tablet-desktop {
+                gap: 60px;
+                flex-direction: row;
+           }
 
            &__box {
+                
                 display: flex;
-                width: 265px;
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 24px;
+                gap: 16px;
+
+                @include tablet-desktop {
+                    width: 265px;
+                    gap: 24px;
+                }
 
                 &__wr {
+                   
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
@@ -88,10 +163,16 @@
                         gap: 2px;
                         color: $color-text;
 
-                        font-size: 18px;
+                        font-size: 16px;
                         font-style: normal;
                         font-weight: 500;
                         line-height: normal;
+
+
+                        @include tablet-desktop {
+                            font-size: 18px;
+                        }
+
                     }
                 }
            }
@@ -104,45 +185,79 @@
 
             &__box {
 
-                display: inline-flex;
-                justify-content: space-between;
-                width: 100%; 
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 36px;
+
+                @include tablet-desktop {
+                    display: inline-flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%; 
+                }
 
                 &__items {
-                   display: inline-flex;
+                   
+                   display: flex;
+                   flex-direction: column;
                    align-items: flex-start;
-                   gap: 60px;
+                   gap: 16px;
+
+                   @include tablet-desktop {
+                        display: inline-flex;
+                        align-items: flex-start;
+                        flex-direction: row;
+                        gap: 60px;
+                   }
 
                    &__wr {
-                    display: flex;
-                    width: 265px;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 24px;
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 16px;
+
+                        @include tablet-desktop {
+                            width: 265px;
+                            gap: 24px;
+                        }
+
                    }
                 }
 
                 &__button {
-                    display: inline-flex;
+                    display: flex;
                     padding: 4px;
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 8px;
+                    border-radius: 20px;
 
                     &__login {
+                        
                         display: flex;
-                        padding: 15px 32px;
+                        padding: 9px 16px;
                         align-items: center;
-                        gap: 12px;
+                        gap: 8px;
                         border-radius: 16px;
                         border: 2px solid $color-text;
                         background-color: transparent;
 
-                        font-size: 18px;
+                        border-radius: 12px;
+                        border: 2px solid $color-text;
+
+                        font-size: 16px;
                         font-style: normal;
                         font-weight: 500;
                         line-height: normal;
                         color: $color-text;
+
+                        @include tablet-desktop {
+                            padding: 15px 32px;
+                            gap: 12px;
+                            font-size: 18px;
+                        }
 
                         &--icon {
                             display: flex;
