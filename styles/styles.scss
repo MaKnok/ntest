@@ -18,8 +18,8 @@ body {
     color: $color-text;
 }
 
-main{
-    
+main {
+
     padding: 0 24px;
 
     @include tablet-desktop {
@@ -27,22 +27,17 @@ main{
     }
 }
 
-footer{
-
+footer {
     display: flex;
     width: 390px;
     padding: 60px;
     flex-direction: column;
     align-items: flex-start;
     gap: 36px;
-   
+
     @include tablet-desktop {
         width: 1440px;
         padding: 120px 100px;
         gap: 60px;
     }
 }
-
-
-
-

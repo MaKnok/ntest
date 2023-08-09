@@ -37,9 +37,19 @@
          align-items: flex-start;
          background-color: $beige;
 
+         &:nth-child(2),
+         &:nth-child(3) {
+            visibility: hidden;
+         }
+
          @include tablet-desktop {
             width: auto;
             gap: 24px;
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                visibility: visible;
+            }
          }
 
          &--item {
@@ -178,6 +188,10 @@
             
             @include tablet-desktop {
                 border: 0; 
+
+                &:focus {
+                    outline: none;
+                }
             }
         }
 
@@ -188,11 +202,23 @@
             align-items: flex-start;
             gap: 8px;
 
+            border-radius: 16px;
+
+            &:focus,
+            &:active{
+                border: 2px solid $color-text;
+            }
+
+            @include tablet-desktop {
+                border-radius: 20px;
+            }
+
             & button {
                 display: flex;
                 padding: 9px 16px;
                 align-items: center;
                 gap: 8px;
+
                 border-radius: 12px;
                 background: $color-text;
                 color: $bg-color;
@@ -206,6 +232,20 @@
                 @include tablet-desktop {
                     padding: 15px 32px;
                     gap: 12px;
+                    font-size: 18px;
+
+                    &:hover {
+                        border: 2px solid $color-text;
+                        background-color: transparent;
+                        color: $color-text;
+                    }
+
+                    &:focus,
+                    &:active{
+                        background-color: $color-text;
+                        color: $bg-color;
+                        border: 0;
+                    }
                 }
 
             }

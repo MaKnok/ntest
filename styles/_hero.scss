@@ -119,10 +119,21 @@
                         gap: 12px;
                         border-bottom: 2px solid $color-text;
 
+                        &:hover,
+                        &:focus {
+                            background-color: $color-text;
+                            padding: 16px 8px 16px 44px;
+                        }
+
                         @include tablet-desktop {
                             width: 373px;
                             padding: 18px 16px;
                             gap: 16px;
+
+                            &:hover,
+                            &:focus {
+                                padding: 18px 16px 18px 68px;
+                            }
                         }
         
                         & img{
@@ -139,17 +150,41 @@
                         }
         
                         & span.opt-label {
+
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 500;
                             line-height: 160%;
                             color: $color-text;
+                            
 
                             @include tablet-desktop {
                                 font-size: 18px;
                             }
 
                         }
+
+                        /*provisory mark-up solution for future ids */
+                        & span.opt-label.opt-label-01.focused, 
+                        & span.opt-label.opt-label-02.focused,
+                        & span.opt-label.opt-label-03.focused,
+                        & span.opt-label.opt-label-04.focused,
+                        & span.opt-label.opt-label-05.focused,
+                        & span.opt-label.opt-label-06.focused,
+                        & span.opt-label.opt-label-07.focused, 
+                        & span.opt-label.opt-label-08.focused{
+                            color: $bg-color;
+                            width: 158px;
+
+                            @include tablet-desktop {
+                                width: 237px;
+                            }
+                        }
+
+                        & img.hovered {
+                            order: 2;
+                        }
+
                     }
     
                 }

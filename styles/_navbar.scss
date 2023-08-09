@@ -43,115 +43,105 @@
         gap: 24px;
 
         &__btn{
-            display: flex;
+
+            display: none;
+
+            @include tablet-desktop {
+                display: flex;
+                padding: 15px 18px;
+                align-items: center;
+                gap: 12px;
+
+                border-radius: 16px;
+                border:0;
+                background-color: $bg-color;
+
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+            }
+
+            &__search--icon {
+
+                @include tablet-desktop{
+
+                   display: flex;
+                   width: 24px;
+                   height: 24px;
+                   padding: 2px;
+                   justify-content: center;
+                   align-items: center;
+                   
+                   & img {
+                    width: 20px;
+                    height: 20px;
+                    flex-shrink: 0;
+                   }
+                }
+                
+            }
+
+        }
+
+        &__btn-primary{
+            display: inline-flex;
             padding: 4px;
             flex-direction: column;
             align-items: flex-start;
             gap: 8px;
-            border-radius: 20px;
 
-            &__search {
+            border-radius: 16px;
 
-                display: none;
-
-                &--icon{
-
-                    display: flex;
-                    width: 24px;
-                    height: 24px;
-                    padding: 2px;
-                    justify-content: center;
-                    align-items: center;
-                    
-                    & img{
-                        width: 20px;
-                        height: 20px;
-                        flex-shrink: 0;
-                    }
-                }
-
-                @include tablet-desktop{
-                   display:inline;
-
-                   color: $color-text;
-                   font-size: 18px;
-                   font-weight: 500;
-                   line-height: 21.6px;
-
-                   display: flex;
-                   flex-direction: row;
-                   align-items: center;
-                   padding: 15px 18px;
-                   background-color: transparent;
-                   border: 0;
-                   gap: 12px;
-                }
-                
+            &:active,
+            &:focus {
+                border: 2px solid $color-text;
             }
-    
-            &__login{
-                
-                display: none;
 
-                &--icon{
-
-                    display: flex;
-                    width: 24px;
-                    height: 24px;
-                    padding: 2px;
-                    justify-content: center;
-                    align-items: center;
-
-                    & img{
-                        width: 20px;
-                        height: 20px;
-                        flex-shrink: 0;
-                    }
-                }
-
-                @include tablet-desktop{
-                    display:inline;
-
-                    color: $color-text;
-                    font-size: 18px;
-                    font-weight: 500;
-                    line-height: 21.6px;
-
-                    display: flex;
-                    padding: 15px 32px;
-                    align-items: center;
-                    gap: 12px;
-                    background-color: transparent;
-                    border: 2px solid $color-text;
-                    border-radius: 16px;
-                }
-    
+            @include tablet-desktop {
+                border-radius: 20px;
             }
-    
+
             &__menu{
                 color: $bg-color;
 
                 display: flex;
-                padding: 9px 16px;
+                padding: 10px 16px;
                 align-items: center;
-                gap: 12px;
+                gap: 8px;
+
+                border-radius: 12px;
+                background-color: $color-text;
 
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
 
-                background-color: $color-text;
-                border-radius: 12px;
-                border-width: 0;
+                border: 0;
+
+                &:active,
+                &:focus {
+                    background-color: $color-text;
+                    color: $bg-color;
+                }
 
                 @include tablet-desktop {
-                    border-radius: 16px;
-                    padding: 12px 32px;
+
+                    padding: 15px 32px;
+                    align-items: center;
+                    gap: 12px;
                     font-size: 18px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
+
+                    border-radius: 16px;
+
+                    &:hover{
+                        background-color: $bg-color;
+                        color: $color-text;
+                        border: 2px solid $color-text;
+                    }
+
                 }
 
                 &--icon{
@@ -167,12 +157,88 @@
                             width: 30px;
                             height: 30px;
                         }
-        
                     }
                 }
 
+
             }
         }
+
+        &__btn-secondary{
+
+            display: none;
+
+            @include tablet-desktop {
+                display: flex;
+                padding: 4px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                border-radius: 20px;
+
+                &:hover,
+                &:focus,
+                &:active{
+                    border: 2px solid $color-text;
+                }
+            }
+
+            &__login{
+
+                display: none;
+
+                @include tablet-desktop {
+                    display: flex;
+                    padding: 15px 32px;
+                    align-items: center;
+                    gap: 12px;
+                    border-radius: 16px;
+                    border: 2px solid $color-text;
+
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+
+                    color: $color-text;
+                    background-color: $bg-color;
+
+                    &:hover{
+                        background-color: $color-text;
+                        color: $bg-color;
+                        border: 0;
+                    }
+
+                    &:focus,
+                    &:active{
+                        background-color: $bg-color;
+                        color: $color-text;
+                        border: 2px solid $color-text;
+                    }
+                }
+
+                &--icon {
+
+                    @include tablet-desktop {
+                        display: flex;
+                        width: 24px;
+                        height: 24px;
+                        padding: 2px;
+                        justify-content: center;
+                        align-items: center;
+
+                        & img{
+                            width: 20px;
+                            height: 20px;
+                            flex-shrink: 0;
+                        }
+                    }
+
+                }
+    
+            }
+        }
+
 
     }
 }
