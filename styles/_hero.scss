@@ -7,14 +7,14 @@
 
         &--center-img{
 
-            background: rgb(211,211,211, 0.5) url("./images/hero-mobile.png") no-repeat;
+            background: rgb(211,211,211, 0.5) url("./images/hero-mobile.webp") no-repeat;
                 background-size: cover;
                 width: 342px;
                 height: 385.406px;
                 flex-shrink: 0;
 
             @include tablet-desktop {
-                background: rgb(211,211,211, 0.5) url("./images/hero_img.png") no-repeat;
+                background: rgb(211,211,211, 0.5) url("./images/hero_img.webp") no-repeat;
                 background-size: cover;
                 width: 1240.241px;
                 height: 447.195px;
@@ -68,7 +68,7 @@
                     }
                 }
 
-                & h4 {
+                & h2 {
                     font-size: 20px;
                     font-style: normal;
                     font-weight: 500;
@@ -128,14 +128,17 @@
                         & img{
 
                             width: 24px;
+                            height: 24px;
+                            flex-shrink: 0;
 
                             @include tablet-desktop {
-                                font-size: 36px;
+                                width: 36px;
+                                height: 36px;
                             }
 
                         }
         
-                        & h6 {
+                        & span.opt-label {
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 500;

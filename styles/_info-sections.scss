@@ -228,7 +228,6 @@
     }                                                                                                                                                                                                                                                                                                                                                                                                   
 }                                                               
 
-
 .wood {
 
     &__container {
@@ -243,13 +242,11 @@
             gap: -157px;
         }
 
-        & figure {
+        & img {
 
             width: 346.602px;
             height: 346.602px;
             flex-shrink: 0;
-            background: rgb(211,211,211, 0.5) url("./images/wood.png") no-repeat;
-            background-size: cover;
             
             @include tablet-desktop {
                 width: 590px;
@@ -349,7 +346,7 @@
                 width:auto;
             }
 
-            & h4 {
+            & h3 {
               
                 font-size: 22px;
                 font-style: normal;
@@ -467,7 +464,7 @@
                         align-items: flex-start;
                         gap: 16px;
 
-                        & h5 {
+                        & h4 {
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 500;
@@ -479,7 +476,7 @@
                             }
                         }
 
-                        & h4 {
+                        & span.desc {
                             font-size: 20px;
                             font-style: normal;
                             font-weight: 500;
@@ -522,29 +519,20 @@
                 }
 
                 & figure {
-                    width: 270px;
-                    height: 191.832px;
 
-                    @include tablet-desktop {
-                        width: 318px;
-                        height: 220px;
+                    & img{
+
+                        width: 270px;
+                        height: 191.832px;
+
+                        @include tablet-desktop {
+                            width: 318px;
+                            height: 220px;
+                        }
                     }
+
                 }
 
-                & .fig01{
-                    background: rgb(211,211,211, 0.5) url("./images/pic01.png") no-repeat;
-                    background-size: cover;
-                }
-
-                & .fig02{
-                    background: rgb(211,211,211, 0.5) url("./images/pic02.png") no-repeat;
-                    background-size: cover;
-                }
-
-                & .fig03{
-                    background: rgb(211,211,211, 0.5) url("./images/pic03.png") no-repeat;
-                    background-size: cover;
-                }
            }
         }
 
@@ -659,7 +647,7 @@
                             width: auto;
                         }
     
-                        p {
+                        h4 {
                             font-size: 20px;
                             font-style: normal;
                             font-weight: 500;
@@ -708,7 +696,7 @@
                             gap: 24px;
                         }
 
-                        p {
+                        h4 {
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 500;
@@ -773,7 +761,7 @@
                                     width: 220px;
 
                                     @include tablet-desktop {
-                                        width: auto;
+                                        width: 324px;
                                     }
                                 }
     
@@ -781,7 +769,7 @@
                                     width: 220px;
 
                                     @include tablet-desktop {
-                                        width: auto;
+                                        width: 324px;
                                     }
                                 }
                             }

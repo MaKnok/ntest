@@ -56,7 +56,9 @@
   align-items: center;
 }
 .navbar__actions__btn__search--icon img {
-  width: 24px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 @media screen and (min-width: 768px) {
   .navbar__actions__btn__search {
@@ -87,6 +89,8 @@
 }
 .navbar__actions__btn__login--icon img {
   width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 @media screen and (min-width: 768px) {
   .navbar__actions__btn__login {
@@ -135,15 +139,17 @@
 }
 .navbar__actions__btn__menu--icon img {
   width: 24px;
+  height: 24px;
 }
 @media screen and (min-width: 768px) {
   .navbar__actions__btn__menu--icon img {
     width: 30px;
+    height: 30px;
   }
 }
 
 .hero__container--center-img {
-  background: rgba(211, 211, 211, 0.5) url("./images/hero-mobile.png") no-repeat;
+  background: rgba(211, 211, 211, 0.5) url("./images/hero-mobile.webp") no-repeat;
   background-size: cover;
   width: 342px;
   height: 385.406px;
@@ -151,7 +157,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero__container--center-img {
-    background: rgba(211, 211, 211, 0.5) url("./images/hero_img.png") no-repeat;
+    background: rgba(211, 211, 211, 0.5) url("./images/hero_img.webp") no-repeat;
     background-size: cover;
     width: 1240.241px;
     height: 447.195px;
@@ -202,14 +208,14 @@
     font-size: 48px;
   }
 }
-.hero__container__center__title h4 {
+.hero__container__center__title h2 {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
 }
 @media screen and (min-width: 768px) {
-  .hero__container__center__title h4 {
+  .hero__container__center__title h2 {
     font-size: 24px;
   }
 }
@@ -257,13 +263,16 @@
 }
 .hero__container__center__list__col--item img {
   width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 @media screen and (min-width: 768px) {
   .hero__container__center__list__col--item img {
-    font-size: 36px;
+    width: 36px;
+    height: 36px;
   }
 }
-.hero__container__center__list__col--item h6 {
+.hero__container__center__list__col--item span.opt-label {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -271,7 +280,7 @@
   color: #301B0A;
 }
 @media screen and (min-width: 768px) {
-  .hero__container__center__list__col--item h6 {
+  .hero__container__center__list__col--item span.opt-label {
     font-size: 18px;
   }
 }
@@ -494,15 +503,13 @@
     gap: -157px;
   }
 }
-.wood__container figure {
+.wood__container img {
   width: 346.602px;
   height: 346.602px;
   flex-shrink: 0;
-  background: rgba(211, 211, 211, 0.5) url("./images/wood.png") no-repeat;
-  background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  .wood__container figure {
+  .wood__container img {
     width: 590px;
     height: 590px;
   }
@@ -591,14 +598,14 @@
     width: auto;
   }
 }
-.info01__container__box h4 {
+.info01__container__box h3 {
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
 }
 @media screen and (min-width: 768px) {
-  .info01__container__box h4 {
+  .info01__container__box h3 {
     font-size: 28px;
     width: 421px;
   }
@@ -697,7 +704,7 @@
   align-items: flex-start;
   gap: 16px;
 }
-.info02__container__wr__box__desc--column h5 {
+.info02__container__wr__box__desc--column h4 {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -705,11 +712,11 @@
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
-  .info02__container__wr__box__desc--column h5 {
+  .info02__container__wr__box__desc--column h4 {
     font-size: 20px;
   }
 }
-.info02__container__wr__box__desc--column h4 {
+.info02__container__wr__box__desc--column span.desc {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -717,7 +724,7 @@
   width: 270px;
 }
 @media screen and (min-width: 768px) {
-  .info02__container__wr__box__desc--column h4 {
+  .info02__container__wr__box__desc--column span.desc {
     font-size: 24px;
     width: 298px;
   }
@@ -746,27 +753,15 @@
     height: 40px;
   }
 }
-.info02__container__wr__box figure {
+.info02__container__wr__box figure img {
   width: 270px;
   height: 191.832px;
 }
 @media screen and (min-width: 768px) {
-  .info02__container__wr__box figure {
+  .info02__container__wr__box figure img {
     width: 318px;
     height: 220px;
   }
-}
-.info02__container__wr__box .fig01 {
-  background: rgba(211, 211, 211, 0.5) url("./images/pic01.png") no-repeat;
-  background-size: cover;
-}
-.info02__container__wr__box .fig02 {
-  background: rgba(211, 211, 211, 0.5) url("./images/pic02.png") no-repeat;
-  background-size: cover;
-}
-.info02__container__wr__box .fig03 {
-  background: rgba(211, 211, 211, 0.5) url("./images/pic03.png") no-repeat;
-  background-size: cover;
 }
 .info02__container--btn {
   visibility: hidden;
@@ -874,7 +869,7 @@
     width: auto;
   }
 }
-.info03__container__wr__box__box01 p {
+.info03__container__wr__box__box01 h4 {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -882,7 +877,7 @@
   margin-top: 24px;
 }
 @media screen and (min-width: 768px) {
-  .info03__container__wr__box__box01 p {
+  .info03__container__wr__box__box01 h4 {
     font-size: 24px;
     width: 372px;
     margin-top: 0;
@@ -921,7 +916,7 @@
     gap: 24px;
   }
 }
-.info03__container__wr__box__box02 p {
+.info03__container__wr__box__box02 h4 {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -929,7 +924,7 @@
   width: 270px;
 }
 @media screen and (min-width: 768px) {
-  .info03__container__wr__box__box02 p {
+  .info03__container__wr__box__box02 h4 {
     width: 472px;
     font-size: 20px;
   }
@@ -984,7 +979,7 @@
 }
 @media screen and (min-width: 768px) {
   .info03__container__wr__box__box02__local-date .local-date-wr .local, .info03__container__wr__box__box02__local-date .local-date-wr .date {
-    width: auto;
+    width: 324px;
   }
 }
 .info03__container__wr__box__box02__local-date .local-date-wr .time {
@@ -992,7 +987,7 @@
 }
 @media screen and (min-width: 768px) {
   .info03__container__wr__box__box02__local-date .local-date-wr .time {
-    width: auto;
+    width: 324px;
   }
 }
 .info03__container__wr__box__box03 {
@@ -1074,7 +1069,7 @@
     gap: 16px;
   }
 }
-.footer__data__address-contact h6 {
+.footer__data__address-contact span.address-contact {
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -1082,7 +1077,7 @@
   width: 300px;
 }
 @media screen and (min-width: 768px) {
-  .footer__data__address-contact h6 {
+  .footer__data__address-contact span.address-contact {
     font-size: 20px;
   }
 }

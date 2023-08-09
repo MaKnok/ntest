@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="sv">
+<html lang="no" role="document">
 
 <head>
     <!--Genenal Config-->
@@ -10,12 +10,14 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="#" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap" rel="stylesheet">
 
+    <meta name="description" content="Vi er en robust organisasjon med høy kompetanse innen alle skogtjenester du trenger som skogeier.">
     <title>Frontend test</title>
     
     <!--jQuery-->
@@ -57,16 +59,16 @@
 <body>
 
     <!-- Menu content -->
-    <aside class="menu">
-        <nav class="menu__navbar" role="navigation">
+    <aside class="menu" role="complementary">
+        <nav class="menu__navbar">
             <div class="menu__navbar__logo">
-                <img src="./styles/images/logo.png" alt="Logo">
+                <img src="./styles/images/logo.svg" alt="Logo" role="presentation">
             </div>
             <div class="menu__navbar__btn">
                 <button type="button" class="menu__navbar__btn--close-menu" id="close-menu">
                     <span>Lukk</span>
                     <div class="close-icon">
-                        <img src="./styles/icons/close.png" alt="close">
+                        <img src="./styles/icons/close.svg" alt="close" role="presentation">
                     </div>
                 </button>
             </div>
@@ -127,7 +129,7 @@
                         <button type="button" class="menu__content__bottom__box__button__login">
                             <span>Logg inn</span>
                             <div class="menu__content__bottom__box__button__login--icon">
-                                <img src="./styles/icons/icon_profile_circled.png" alt="profile">
+                                <img src="./styles/icons/icon_profile_circled.svg" alt="login" role="presentation">
                             </div>
                         </button>
                     </div>
@@ -141,20 +143,20 @@
         <!-- Navbar section -->
         <nav class="navbar" role="navigation">
             <div class="navbar__logo">
-                <a href="/"><img src="./styles/images/logo.png" alt="logo"></a>
+                <a href="/" role="link"><img src="./styles/images/logo.svg" alt="logo" role="presentation"></a>
             </div>
             <div class="navbar__actions">
                 <button type="button" class="navbar__actions__btn__search">
                     <span>Søk</span>
                     <div class="navbar__actions__btn__search--icon">
-                       <img src="./styles/icons/icon_search.png" alt="search">
+                       <img src="./styles/icons/icon_search.svg" alt="search" role="presentation">
                     </div>
                 </button>
                 <div class="navbar__actions__btn">
                     <button type="button" class="navbar__actions__btn__login">
                         <span>Logg inn</span>
                         <div class="navbar__actions__btn__login--icon">
-                            <img src="./styles/icons/icon_profile_circled.png" alt="profile">
+                            <img src="./styles/icons/icon_profile_circled.svg" alt="login" role="presentation">
                         </div>
                     </button>
                 </div>
@@ -162,7 +164,7 @@
                     <button type="button" class="navbar__actions__btn__menu" id="open-menu">
                         <span>Meny</span>
                         <div class="navbar__actions__btn__menu--icon">
-                            <img src="./styles/icons/hamburger.png" alt="bars">
+                            <img src="./styles/icons/hamburger.svg" alt="bars" role="presentation">
                         </div>
                     </button>
                 </div>
@@ -173,59 +175,58 @@
 
     <main>
         <!-- Hero section -->
-        <section class="hero">
+        <section class="hero" role="region">
             <div class="hero__container">
-                <div class="hero__container--center-img">
-                    
-                </div>
+                <div class="hero__container--center-img" title="Allskog"></div>
                 <div class="hero__container__center">
 
                     <div class="hero__container__center__title">
                         <h1>Allskog er et samvirke av og for skogeiere</h1>
-                        <h4>Vi er en robust organisasjon med høy kompetanse innen alle skogtjenester du trenger som skogeier.</h4>
+                        <h2>Vi er en robust organisasjon med høy kompetanse innen alle skogtjenester du trenger som skogeier.</h2>
                     </div>
 
                     <div class="hero__container__center__list">
 
                         <div class="hero__container__center__list__col">
-                            <div class="hero__container__center__list__col--item">
-                                <img src="./styles/icons/arrow.png">
-                                <h6>Skogtjenester</h6>
+                            <div class="hero__container__center__list__col--item" role="button" aria-pressed="false">
+                                <img src="./styles/icons/arrow.svg" role="presentation" alt="arrow">
+                                <span class="opt-label">Skogtjenester</span>
                             </div>
-                            <div class="hero__container__center__list__col--item">
-                                <img src="./styles/icons/arrow.png">
-                                <h6>Veiledning</h6>
+                            <div class="hero__container__center__list__col--item" role="button" aria-pressed="false">
+                                <img src="./styles/icons/arrow.svg" role="presentation" alt="arrow">
+                                <span class="opt-label">Veiledning</span>
                             </div>
-                            <div class="hero__container__center__list__col--item"> 
-                                <img src="./styles/icons/arrow.png">
-                                <h6>Bli andelseier</h6>
+                            <div class="hero__container__center__list__col--item" role="button" aria-pressed="false"> 
+                                <img src="./styles/icons/arrow.svg" role="presentation" alt="arrow">
+                                <span class="opt-label">Bli andelseier</span>
                             </div>
-                            <div class="hero__container__center__list__col--item">
-                                <img src="./styles/icons/arrow.png">
-                                <h6>Finn skogbruksleder</h6>
+                            <div class="hero__container__center__list__col--item" role="button" aria-pressed="false">
+                                <img src="./styles/icons/arrow.svg" role="presentation" alt="arrow">
+                                <span class="opt-label">Finn skogbruksleder</span>
                             </div>
                         </div>
 
                         <div class="hero__container__center__list__col">
-                            <div class="hero__container__center__list__col--item">
-                                <img src="./styles/icons/arrow.png">
-                                <h6>Om Allskog</h6>
+                            <div class="hero__container__center__list__col--item" role="button" aria-pressed="false">
+                                <img src="./styles/icons/arrow.svg" role="presentation" alt="arrow">
+                                <span class="opt-label">Om Allskog</span>
                             </div>
-                            <div class="hero__container__center__list__col--item">
-                                <img src="./styles/icons/arrow.png">
-                                <h6>Bærekraft og miljø</h6>
+                            <div class="hero__container__center__list__col--item" role="button" aria-pressed="false">
+                                <img src="./styles/icons/arrow.svg" role="presentation" alt="arrow">
+                                <span class="opt-label">Bærekraft og miljø</span>
                             </div>
-                            <div class="hero__container__center__list__col--item">
-                                <img src="./styles/icons/arrow.png">
-                                <h6>Arrangementer</h6>
+                            <div class="hero__container__center__list__col--item" role="button" aria-pressed="false">
+                                <img src="./styles/icons/arrow.svg" role="presentation" alt="arrow">
+                                <span class="opt-label">Arrangementer</span>
                             </div>
-                            <div class="hero__container__center__list__col--item">
-                                <img src="./styles/icons/arrow.png">
-                                <h6>Aktuelt</h6>
+                            <div class="hero__container__center__list__col--item" role="button" aria-pressed="false">
+                                <img src="./styles/icons/arrow.svg" role="presentation" alt="arrow">
+                                <span class="opt-label">Aktuelt</span>
                             </div>
                         </div>
 
                     </div>
+
                 </div>
             </div>
         </section>
@@ -235,90 +236,89 @@
         <section class="info-sections">
 
              <!-- Numbers section -->
-            <section class="numbers">
+            <section class="numbers" role="region">
                 <div class="numbers__container">
                     <div class="numbers__container__box">
-                    <div class="numbers__container__box--item">
-                        <span class="main-number">70</span>
-                    </div>
-                    <div class="numbers__container__box--item">
-                        <span class="desc-number">skogeierlag</span>
-                    </div>
+                        <div class="numbers__container__box--item">
+                            <span class="main-number">70</span>
+                        </div>
+                        <div class="numbers__container__box--item">
+                            <span class="desc-number">skogeierlag</span>
+                        </div>
                     </div>
                     <div class="numbers__container__box">
-                    <div class="numbers__container__box--item">
-                        <span class="main-number">7600</span>
-                    </div>
+                        <div class="numbers__container__box--item">
+                            <span class="main-number">7600</span>
+                        </div>
                     <div class="numbers__container__box--item">
                         <span class="desc-number">andelseiere</span>
                     </div>
                     </div>
                     <div class="numbers__container__box">
-                    <div class="numbers__container__box--item">
-                        <span class="main-number">1 million</span>
-                    </div>
-                    <div class="numbers__container__box--item">
-                        <span class="desc-number">m3 tømmer per år</span>
-                    </div>
+                        <div class="numbers__container__box--item">
+                            <span class="main-number">1 million</span>
+                        </div>
+                        <div class="numbers__container__box--item">
+                            <span class="desc-number">m3 tømmer per år</span>
+                        </div>
                     </div>
                 </div>
                 <div class="numbers__carousel">
                   <div class="numbers__carousel__img">
-                    <img src="./styles/icons/carousel.png" alt="numbers">
+                    <img src="./styles/icons/carousel.svg" alt="numbers">
                   </div>
                 </div>
             </section>
             <!-- End of Numbers section -->
 
             <!-- Search section -->
-            <section class="search">
+            <section class="search" role="region">
                 <div class="search__description">
                     <h3>Finn din skogbruksleder</h3>
-                    <p>Søk etter postnummer, region eller fylke</p>
+                    <p role="paragraph">Søk etter postnummer, region eller fylke</p>
                 </div>
-                <div class="search__input">
+                <form class="search__input">
                     <input type="text" placeholder="Skriv søkeord">
                     <div class="search__input__btn">
                         <button type="button">
                             <span>Søk</span>
                             <div class="search__input__btn__img">
-                                <img src="./styles/icons/icon_search_white.png" alt="search">
+                                <img src="./styles/icons/icon_search_white.svg" alt="search" role="presentation">
                             </div>
                         </button>
                     </div>
-                </div>
+                </form>
             </section>
             <!-- End of Search section -->
 
             <!-- Wood section -->
-            <section class="wood">
-            <div class="wood__container">
-                <figure>
-                </figure>
+            <section class="wood" role="region">
+                <div class="wood__container">
+                <img src="./styles/images/wood.webp" alt="Wood illustrative image" role="presentation">
                 <div class="wood__container--box">
                     <h3>Lyst til å bli andelseier i </br>Allskog?</h3>
-                    <p>Hvis du eier skog, kan du melde deg inn i Allskog. Da blir du medeier av skogfellesskapet i Norge.</p>
-                    <a><img src="./styles/icons/arrow.png"></a>
+                    <p role="paragraph">Hvis du eier skog, kan du melde deg inn i Allskog. Da blir du medeier av skogfellesskapet i Norge.</p>
+                    <a href="/" role="link"><img src="./styles/icons/arrow.svg" role="presentation" alt="arrow"></a>
                 </div>
-            </div>
+                </div>
             </section>
             <!-- End of Wood section -->
 
             <!-- Info01 section -->
-            <section class="info01">
+            <section class="info01" role="region">
                 <div class="info01__container">
                 <div class="info01__container__box">
-                    <h4>Skal du plante ny skog?</h4>
+                    <h3>Skal du plante ny skog?</h3>
                     <div class="info01__container__box--desc">
-                        <p>Etter hogst skal det plantes innen tre år. Skal du plante selv denne sesongen, må du bestille planter innen 15. april.</p>
-                        <img src="./styles/icons/arrow.png">
+                        <p role="paragraph">Etter hogst skal det plantes innen tre år. Skal du plante selv denne sesongen, må du bestille planter innen 15. april.</p>
+                        <a href="/" role="link"><img src="./styles/icons/arrow.svg" role="presentation" alt="arrow"></a>
                     </div>
                 </div>
                 <div class="info01__container__box">
-                    <h4>Er skogen moden for hogst? Avtal hogst nå.</h4>
+                    <h3>Er skogen moden for hogst? Avtal hogst nå.</h3>
                     <div class="info01__container__box--desc">
-                        <p>Vurderer du å ta ut tømmer fra skogen din? Ta gjerne en prat med en av våre dyktige skogbruksledere. Fra oss i Allskog får du solid veiledning, basert på skogfaglig erfaring og kunnskap.</p>
-                        <img src="./styles/icons/arrow.png">
+                        <p role="paragraph">Vurderer du å ta ut tømmer fra skogen din? Ta gjerne en prat med en av våre dyktige skogbruksledere. Fra oss i Allskog får du solid veiledning, basert på skogfaglig erfaring og kunnskap.</p>
+                        <a href="/" role="link"><img src="./styles/icons/arrow.svg" role="presentation" alt="arrow"></a>
                     </div>
                 </div>
                 </div>
@@ -326,44 +326,47 @@
             <!-- End of Info01 section -->
 
             <!-- Info02 section -->
-            <section class="info02">
+            <section class="info02" role="region">
                 <div class="info02__container">
                 <h3>Nyheter</h3>
                 <div class="info02__container__wr">
                     <div class="info02__container__wr__box">
-                        <figure class='fig01'>
+                        <figure role="figure">
+                            <img src="./styles/images/pic01.webp" alt="Går med rekordoverskudd" role="presentation">
                         </figure>
                         <div class="info02__container__wr__box__desc">
                             <div class="info02__container__wr__box__desc--column">
-                                <h5>17.april 2023</h5>
-                                <h4>Går med rekordoverskudd: – Skogeiere har vært lojale til samvirket</h4>
+                                <h4><time datetime="2023-04-17">17.april 2023</time></h4>
+                                <span class="desc">Går med rekordoverskudd: – Skogeiere har vært lojale til samvirket</span>
                             </div>
-                            <p>Allskog legger bak seg et av mest innbringende år noensinne som konsern. For femte år på rad kan 7 500 skogeiere nord for Stad og Dovre få utbetalt utbytte fra samvirket.</p>
-                            <img src="./styles/icons/arrow.png">
+                            <p role="paragraph">Allskog legger bak seg et av mest innbringende år noensinne som konsern. For femte år på rad kan 7 500 skogeiere nord for Stad og Dovre få utbetalt utbytte fra samvirket.</p>
+                            <a href="/" role="link"><img src="./styles/icons/arrow.svg" role="presentation" alt="arrow"></a>
                         </div>
                     </div>
                     <div class="info02__container__wr__box">
-                        <figure class='fig02'>
+                        <figure role="figure">
+                            <img src="./styles/images/pic02.webp" alt="Bruk rabatten din på kurs i Norsk PEFC Skogstandard" role="presentation">
                         </figure>
                         <div class="info02__container__wr__box__desc">
                             <div class="info02__container__wr__box__desc--column">
-                                <h5>17.april 2023</h5>
-                                <h4>Bruk rabatten din på kurs i norsk pefc skogstandard</h4>
+                                <h4><time datetime="2023-04-17">17.april 2023</time></h4>
+                                <span class="desc">Bruk rabatten din på kurs i norsk pefc skogstandard</span>
                             </div>
-                            <p>Skal du hogge selv og levere tømmer? Nå får alle som driver i skogen tilbud om kurs i den nye skogstandarden. Som andelseier i ALLSKOG får du kurset til rabattert pris.</p>
-                            <img src="./styles/icons/arrow.png">
+                            <p role="paragraph">Skal du hogge selv og levere tømmer? Nå får alle som driver i skogen tilbud om kurs i den nye skogstandarden. Som andelseier i ALLSKOG får du kurset til rabattert pris.</p>
+                            <a href="/" role="link"><img src="./styles/icons/arrow.svg" role="presentation"></a>
                         </div>
                     </div>
                     <div class="info02__container__wr__box">
-                        <figure class='fig03'>
+                        <figure role="figure">
+                            <img src="./styles/images/pic03.webp" alt="Dette bør du vite om nye miljøhensyn i skogen" role="presentation">
                         </figure>
                         <div class="info02__container__wr__box__desc">
                             <div class="info02__container__wr__box__desc--column">
-                                <h5>17.april 2023</h5>
-                                <h4>Dette bør du vite om nye miljøhensyn i skogen</h4>
+                                <h4><time datetime="2023-04-17">17.april 2023</time></h4>
+                                <span class="desc">Dette bør du vite om nye miljøhensyn i skogen</span>
                             </div>
-                            <p>Alt tømmer som ALLSKOG omsetter, er miljøsertifisert etter Norsk PEFC Skogstandard. Industrien og for forbrukerne skal vite at virket kommer fra skog drevet på bærekraftig vis.</p>
-                            <img src="./styles/icons/arrow.png">
+                            <p role="paragraph">Alt tømmer som ALLSKOG omsetter, er miljøsertifisert etter Norsk PEFC Skogstandard. Industrien og for forbrukerne skal vite at virket kommer fra skog drevet på bærekraftig vis.</p>
+                            <a href="/" role="link"><img src="./styles/icons/arrow.svg" role="presentation" alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -377,62 +380,62 @@
             <!-- End of Info02 section -->
 
             <!-- Info03 section -->
-            <section class="info03">
+            <section class="info03" role="region">
                 <div class="info03__container">
                     <h3 id="info03-title"></h3>
                     <div class="info03__container__wr">
                         <div class="info03__container__wr__box">
                             <div class="info03__container__wr__box__box01">
-                                <span>9. mai</span>
-                                <p>Temakveld: Etablering av nytt sagbruk i Vefsn</p>
+                                <span><time datetime="2023-05-09">9. mai</time></span>
+                                <h4>Temakveld: Etablering av nytt sagbruk i Vefsn</h4>
                             </div>
                             <div class="info03__container__wr__box__box02">
-                            <p>Vefsn skogeierlag inviterer til temakveld, etablering av nytt sagbruk i Vefsn.</p>
+                            <h4>Vefsn skogeierlag inviterer til temakveld, etablering av nytt sagbruk i Vefsn.</h4>
                             <div class="info03__container__wr__box__box02__local-date">
                                 <div class="local-date-wr">
-                                    <img src="./styles/icons/local.png">
-                                    <p class="local">Mosjøen videregående skole avd. Marka (Landbruksskolen)<p>
+                                    <img src="./styles/icons/local.svg" role="presentation" alt="place">
+                                    <p class="local" role="paragraph">Mosjøen videregående skole avd. Marka (Landbruksskolen)</p>
                                 </div>
                                 <div class="local-date-wr">
-                                    <img src="./styles/icons/calendar.png">
-                                    <p class="date">9. mai<p>
+                                    <img src="./styles/icons/calendar.svg" role="presentation" alt="date">
+                                    <p class="date"><time datetime="2023-05-09">9. mai</time></p>
                                 </div>
                                 <div class="local-date-wr">
-                                    <img src="./styles/icons/clock.png">
-                                    <p class="time">Kl. 19.00 - 21.00<p>
+                                    <img src="./styles/icons/clock.svg" role="presentation" alt="time">
+                                    <p class="time">Kl. <time datetime="19:00">19.00</time> - <time datetime="21:00">21.00</time></p>
                                 </div>
                             </div>
                             </div>
                             <div class="info03__container__wr__box__box03">
-                                <img src="./styles/icons/arrow.png">
+                                <a href="/" role="link"><img src="./styles/icons/arrow.svg" role="presentation" alt="arrow"></a>
                             </div>
                         </div>
                         <div class="info03__container__wr__box">
                         <div class="info03__container__wr__box__box01">
-                            <span>24. -25. mai</span>
-                            <p>Elgbeitetaksering i Hattfjelldal, 24. og 25. mai 2023</p>
+                            <span><time datetime="2023-05-24">24.</time> -<time datetime="2023-05-25">25. mai</time></span>
+                            <h4>Elgbeitetaksering i Hattfjelldal, <time datetime="2023-05-24">24.</time>  og <time datetime="2023-05-25">25. mai 2023</time></h4>
                         </div>
 
                         <div class="info03__container__wr__box__box02">
-                            <p>Kurset bygger på «Veileder og standard for taksering av elgbeite i skog» – utviklet av Skogkurs</p>
+                            <h4>Kurset bygger på «Veileder og standard for taksering av elgbeite i skog» – utviklet av Skogkurs</h4>
                             <div class="info03__container__wr__box__box02__local-date">
                             <div class="local-date-wr">
-                                <img src="./styles/icons/local.png">
-                                <p class="local">Fjellfolkets Hus, Adr. Hattfjelldalsvollen 1, Hattfjelldal.<p>
+                                <img src="./styles/icons/local.svg" role="presentation" alt="place">
+                                <p class="local" role="paragraph">Fjellfolkets Hus, Adr. Hattfjelldalsvollen 1, Hattfjelldal.</p>
                             </div>
                             <div class="local-date-wr">
-                                <img src="./styles/icons/calendar.png">
-                                <p class="date">Onsdag 24. mai og torsdag 25. mai<p>
+                                <img src="./styles/icons/calendar.svg" role="presentation" alt="date">
+                                <p class="date">Onsdag <time datetime="2023-05-24">24. mai</time> og torsdag <time datetime="2023-05-25">25. mai</time></p>
                             </div>
                             <div class="local-date-wr">
-                                <img src="./styles/icons/clock.png">
-                                <p class="time">Kl. 09.00-15.00 begge dager<p>
+                                <img src="./styles/icons/clock.svg" role="presentation" alt="time">
+                                <p class="time">Kl. <time datetime="09:00">09.00</time>-<time datetime="15:00">15.00</time> begge dager</p>
                             </div>
                             </div>
                         </div>
 
                         <div class="info03__container__wr__box__box03">
-                            <img src="./styles/icons/arrow.png">
+                            <a href="/" role="link"><img src="./styles/icons/arrow.svg" role="presentation" alt="arrow"></a>
                         </div>
                         </div>
                     </div>
@@ -449,41 +452,41 @@
         <!-- End of Info section -->
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <!-- Footer section -->
         <div class="footer__logo">
-            <a href="/">
-                <img src="./styles/images/logo.png" alt="logo">
+            <a href="/" role="link">
+                <img src="./styles/images/logo.svg" alt="logo" role="presentation">
             </a>
         </div>
 
         <div class="footer__data">
             <div class="footer__data__address-contact">
-                <h6>Adresse</h6>
+                <span class="address-contact">Adresse</span>
                 <div class="footer__data__address-contact__wr">
-                    <p>Ingvald Ystgaards vei 13A</p>
-                    <p>7047 Trondheim</p>
+                    <p role="paragraph">Ingvald Ystgaards vei 13A</p>
+                    <p role="paragraph">7047 Trondheim</p>
                 </div>
             </div>
 
             <div class="footer__data__address-contact">
-                <h6>Kontakt</h6>
+                <span class="address-contact">Kontakt</span>
                 <div class="footer__data__address-contact__wr">
-                    <p>Telefon: 73 500 123</p>
-                    <p><a href="mailto:firmapost@allskog.no?subject='kontact'">firmapost@allskog.no</a></p>
-                    <p><a href="https://kart.1881.no?q=ALLSKOG BA" target="_blank">Veibeskrivelse</a></p>
+                    <p role="paragraph">Telefon: 73 500 123</p>
+                    <p role="paragraph"><a href="mailto:firmapost@allskog.no?subject='kontact'" role="link">firmapost@allskog.no</a></p>
+                    <p role="paragraph"><a href="https://kart.1881.no?q=ALLSKOG BA" target="_blank" role="link">Veibeskrivelse</a></p>
                 </div>
             </div>
 
             <div class="footer__data__address-contact">
-                <h6>Følg oss</h6>
+                <span class="address-contact">Følg oss</span>
                 <div class="footer__data__address-contact__wr__social"> 
                     <div class="footer__data__address-contact__wr__social--md"> 
-                        <img src="./styles/icons/facebook.png">
+                        <img src="./styles/icons/facebook.svg" role="presentation" alt="facebook">
                         <p>Facebook</p>
                     </div>
                     <div class="footer__data__address-contact__wr__social--md"> 
-                        <img src="./styles/icons/youtube.png">
+                        <img src="./styles/icons/youtube.svg" role="presentation" alt="youtube">
                         <p>YouTube</p>
                     </div>
                 </div>
@@ -492,7 +495,7 @@
 
         <div class="footer__copyright">
             <div class="footer__copyright__link">
-                <a href="https://www.allskog.no/personvernerklaering-allskog-sa" target="_blank">
+                <a href="https://www.allskog.no/personvernerklaering-allskog-sa" target="_blank" role="link">
                     <span>Personvern</span>
                 </a>
             </div>
