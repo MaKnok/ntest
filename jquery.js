@@ -43,20 +43,6 @@ $(document).ready(function(){
         }
     });
 
-    //SEARCH
-    $('#search-btn').mouseover(function(){
-        if($( window ).width() >= 768){
-            $('.search-icon').attr('src', './styles/icons/icon_search.svg');
-        }
-    });
-
-    $('#search-btn').mouseleave(function(){
-        if($( window ).width() >= 768){
-            $('.search-icon').attr('src', './styles/icons/icon_search_white.svg');
-        }
-    });
-
-
     //HERO LINKS - TO BE IMPROVED - FUTURE IDS!
     $('#opt-link-01').mouseover(function(){
         $('.opt-label-01').addClass('focused');
@@ -154,6 +140,101 @@ $(document).ready(function(){
         $('#opt-img-08').removeClass('hovered');
     });
 
+
+    //SEARCH BUTTON
+    $('#search-button').mouseover(function(){
+        if($( window ).width() >= 768){
+            $('.search-icon-path').attr('stroke', '#301B0A');
+        }
+    });
+
+    $('#search-button').mousedown(function(){
+        if($( window ).width() >= 768){
+            $('.search-icon-path').attr('stroke', '#FDF9EF');
+        }
+    });
+
+    $('#search-button').mouseleave(function(){
+        if($( window ).width() >= 768){
+            $('.search-icon-path').attr('stroke', '#FDF9EF');
+        }
+    });
+
+    //WOOD ARTICLE
+    $('#wood-box').mouseover(function(){
+        $('.wood-img').attr('src', './styles/icons/arrow_hover_black.svg');
+    });
+
+    $('#wood-box').mouseleave(function(){
+        $('.wood-img').attr('src', './styles/icons/arrow.svg');
+    });
+
+    //INFO01 ARROWS - TO BE IMPROVED - FUTURE IDS!
+    $('#info1-box-01').mouseover(function(){
+        if($( window ).width() >= 768){
+            $('.info1-img-01').attr('src', './styles/icons/arrow_hover_black.svg');
+        }
+    });
+
+    $('#info1-box-01').mouseleave(function(){
+        if($( window ).width() >= 768){
+            $('.info1-img-01').attr('src', './styles/icons/arrow.svg');
+        }
+    });
+
+    $('#info1-box-02').mouseover(function(){
+        if($( window ).width() >= 768){
+            $('.info1-img-02').attr('src', './styles/icons/arrow_hover_black.svg');
+        }
+    });
+
+    $('#info1-box-02').mouseleave(function(){
+        if($( window ).width() >= 768){
+            $('.info1-img-02').attr('src', './styles/icons/arrow.svg');
+        }
+    });
+
+    //INFO02 ARROWS - TO BE IMPROVED - FUTURE IDS!
+    $('#info2-box-01').mouseover(function(){
+        $('.info2-img-01').attr('src', './styles/icons/arrow_hover.svg');
+    });
+
+    $('#info2-box-01').mouseleave(function(){
+        $('.info2-img-01').attr('src', './styles/icons/arrow.svg');
+    });
+
+    $('#info2-box-02').mouseover(function(){
+        $('.info2-img-02').attr('src', './styles/icons/arrow_hover.svg');
+    });
+
+    $('#info2-box-02').mouseleave(function(){
+        $('.info2-img-02').attr('src', './styles/icons/arrow.svg');
+    });
+
+    $('#info2-box-03').mouseover(function(){
+        $('.info2-img-03').attr('src', './styles/icons/arrow_hover.svg');
+    });
+
+    $('#info2-box-03').mouseleave(function(){
+        $('.info2-img-03').attr('src', './styles/icons/arrow.svg');
+    });
+
+    //INFO03 ARROWS - TO BE IMPROVED - FUTURE IDS!
+    $('#info3-box-01').mouseover(function(){
+        $('.info3-img-01').attr('src', './styles/icons/arrow_hover_black.svg');
+    });
+
+    $('#info3-box-01').mouseleave(function(){
+        $('.info3-img-01').attr('src', './styles/icons/arrow.svg');
+    });
+
+    $('#info3-box-02').mouseover(function(){
+        $('.info3-img-02').attr('src', './styles/icons/arrow_hover_black.svg');
+    });
+
+    $('#info3-box-02').mouseleave(function(){
+        $('.info3-img-02').attr('src', './styles/icons/arrow.svg');
+    });
 
     //INFO03 TITLE CONTENT
     info03TitleContent();

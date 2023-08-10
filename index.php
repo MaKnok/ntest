@@ -246,33 +246,38 @@
 
             <!-- Search section -->
             <article class="search">
-                <div class="search__description">
-                    <h3>Finn din skogbruksleder</h3>
-                    <p >Søk etter postnummer, region eller fylke</p>
-                </div>
-                <form class="search__input" name="search-form" id="search-form">
-                    <input type="text" placeholder="Skriv søkeord">
-                    <div class="search__input__btn">
-                        <button type="button">
-                            <span>Søk</span>
-                            <span class="search__input__btn__img">
-                                <img src="./styles/icons/icon_search_white.svg" alt="search">
-                            </span>
-                        </button>
+                <div class="search__wrapper">
+                    <div class="search__wrapper__description">
+                        <h3>Finn din skogbruksleder</h3>
+                        <p >Søk etter postnummer, region eller fylke</p>
                     </div>
-                </form>
+                    <form class="search__wrapper__input" name="search-form" id="search-form">
+                        <input type="text" placeholder="Skriv søkeord" name="search-field" id="search-field">
+                        <div class="search__wrapper__input__btn">
+                            <button type="button" id="search-button">
+                                <span>Søk</span>
+                                <span class="img-svg">
+                                    <svg class="search-icon" fill="none" viewBox="0 0 22 23" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m16 16.5 5 5" class="search-icon-path" stroke="#FDF9EF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                        <path class="search-icon-path" d="m1 10.071c0 4.7339 3.8376 8.5715 8.5714 8.5715 2.371 0 4.5173-0.9628 6.069-2.5186 1.5465-1.5504 2.5025-3.69 2.5025-6.0529 0-4.7338-3.8376-8.5714-8.5715-8.5714s-8.5714 3.8376-8.5714 8.5714z" stroke="#FDF9EF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </article>
             <!-- End of Search section -->
 
             <!-- Wood section -->
             <article class="wood">
                 <div class="wood__container">
-                <img src="./styles/images/wood.webp" alt="Wood illustrative image">
-                <div class="wood__container--box">
-                    <h3>Lyst til å bli andelseier i Allskog?</h3>
-                    <p >Hvis du eier skog, kan du melde deg inn i Allskog. Da blir du medeier av skogfellesskapet i Norge.</p>
-                    <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow"></a>
-                </div>
+                    <img src="./styles/images/wood.webp" alt="Wood illustrative image">
+                    <div class="wood__container--box" id="wood-box">
+                        <h3>Lyst til å bli andelseier i Allskog?</h3>
+                        <p >Hvis du eier skog, kan du melde deg inn i Allskog. Da blir du medeier av skogfellesskapet i Norge.</p>
+                        <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow" class="wood-img"></a>
+                    </div>
                 </div>
             </article>
             <!-- End of Wood section -->
@@ -280,18 +285,18 @@
             <!-- Info01 section -->
             <article class="info01">
                 <div class="info01__container">
-                <div class="info01__container__box">
+                <div class="info01__container__box" id="info1-box-01">
                     <h3>Skal du plante ny skog?</h3>
                     <div class="info01__container__box--desc">
                         <p >Etter hogst skal det plantes innen tre år. Skal du plante selv denne sesongen, må du bestille planter innen 15. april.</p>
-                        <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow"></a>
+                        <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow" class="info1-img-01"></a>
                     </div>
                 </div>
-                <div class="info01__container__box">
+                <div class="info01__container__box" id="info1-box-02">
                     <h3>Er skogen moden for hogst? Avtal hogst nå.</h3>
                     <div class="info01__container__box--desc">
                         <p >Vurderer du å ta ut tømmer fra skogen din? Ta gjerne en prat med en av våre dyktige skogbruksledere. Fra oss i Allskog får du solid veiledning, basert på skogfaglig erfaring og kunnskap.</p>
-                        <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow"></a>
+                        <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow" class="info1-img-02"></a>
                     </div>
                 </div>
                 </div>
@@ -303,7 +308,7 @@
                 <div class="info02__container">
                 <h3>Nyheter</h3>
                 <div class="info02__container__wr">
-                    <div class="info02__container__wr__box">
+                    <div class="info02__container__wr__box" id="info2-box-01">
                         <figure>
                             <img src="./styles/images/pic01.webp" alt="Går med rekordoverskudd">
                         </figure>
@@ -313,10 +318,10 @@
                                 <span class="desc">Går med rekordoverskudd: – Skogeiere har vært lojale til samvirket</span>
                             </div>
                             <p >Allskog legger bak seg et av mest innbringende år noensinne som konsern. For femte år på rad kan 7 500 skogeiere nord for Stad og Dovre få utbetalt utbytte fra samvirket.</p>
-                            <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow"></a>
+                            <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow" class="info2-img-01"></a>
                         </div>
                     </div>
-                    <div class="info02__container__wr__box">
+                    <div class="info02__container__wr__box" id="info2-box-02">
                         <figure>
                             <img src="./styles/images/pic02.webp" alt="Bruk rabatten din på kurs i Norsk PEFC Skogstandard">
                         </figure>
@@ -326,10 +331,10 @@
                                 <span class="desc">Bruk rabatten din på kurs i norsk pefc skogstandard</span>
                             </div>
                             <p >Skal du hogge selv og levere tømmer? Nå får alle som driver i skogen tilbud om kurs i den nye skogstandarden. Som andelseier i ALLSKOG får du kurset til rabattert pris.</p>
-                            <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow"></a>
+                            <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow" class="info2-img-02"></a>
                         </div>
                     </div>
-                    <div class="info02__container__wr__box">
+                    <div class="info02__container__wr__box" id="info2-box-03">
                         <figure>
                             <img src="./styles/images/pic03.webp" alt="Dette bør du vite om nye miljøhensyn i skogen">
                         </figure>
@@ -339,7 +344,7 @@
                                 <span class="desc">Dette bør du vite om nye miljøhensyn i skogen</span>
                             </div>
                             <p >Alt tømmer som ALLSKOG omsetter, er miljøsertifisert etter Norsk PEFC Skogstandard. Industrien og for forbrukerne skal vite at virket kommer fra skog drevet på bærekraftig vis.</p>
-                            <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow"></a>
+                            <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow" class="info2-img-03"></a>
                         </div>
                     </div>
                 </div>
@@ -357,7 +362,7 @@
                 <div class="info03__container">
                     <h3 id="info03-title">&nbsp;</h3>
                     <div class="info03__container__wr">
-                        <div class="info03__container__wr__box">
+                        <div class="info03__container__wr__box" id="info3-box-01">
                             <div class="info03__container__wr__box__box01">
                                 <span><time datetime="2023-05-09">9. mai</time></span>
                                 <h4>Temakveld: Etablering av nytt sagbruk i Vefsn</h4>
@@ -380,10 +385,10 @@
                             </div>
                             </div>
                             <div class="info03__container__wr__box__box03">
-                                <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow"></a>
+                                <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow" class="info3-img-01"></a>
                             </div>
                         </div>
-                        <div class="info03__container__wr__box">
+                        <div class="info03__container__wr__box" id="info3-box-02">
                         <div class="info03__container__wr__box__box01">
                             <span><time datetime="2023-05-24">24.</time> -<time datetime="2023-05-25">25. mai</time></span>
                             <h4>Elgbeitetaksering i Hattfjelldal, <time datetime="2023-05-24">24.</time>  og <time datetime="2023-05-25">25. mai 2023</time></h4>
@@ -408,7 +413,7 @@
                         </div>
 
                         <div class="info03__container__wr__box__box03">
-                            <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow"></a>
+                            <a href="/"><img src="./styles/icons/arrow.svg" alt="arrow" class="info3-img-02"></a>
                         </div>
                         </div>
                     </div>
