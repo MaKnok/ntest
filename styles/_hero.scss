@@ -8,16 +8,16 @@
         &--center-img{
 
             background: rgb(211,211,211, 0.5) url("./images/hero-mobile.webp") no-repeat;
-                background-size: cover;
-                width: 342px;
-                height: 385.406px;
-                flex-shrink: 0;
+            background-size: cover;
+            width: 342px;
+            height: 385px;
+            flex-shrink: 0;
 
             @include tablet-desktop {
                 background: rgb(211,211,211, 0.5) url("./images/hero_img.webp") no-repeat;
                 background-size: cover;
-                width: 1240.241px;
-                height: 447.195px;
+                width: 1240px;
+                height: 447px;
             }
             
         }

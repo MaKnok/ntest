@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="preload" as="image" href="./styles/images/hero_img.webp" type="image/webp">
+    <link rel="preload" href="./styles/styles.css" as="style">
+    <link rel="preload" href="./jquery.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" as="style">
+
     <!-- Style -->
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" href="./favicon.png">
@@ -15,22 +20,21 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
     <meta name="description" content="Vi er en robust organisasjon med høy kompetanse innen alle skogtjenester du trenger som skogeier.">
     <title>Frontend test</title>
-    
+
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
             integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
-            crossorigin="anonymous">
+            crossorigin="anonymous" defer>
     </script>
-    <script src="jquery.js"></script>
-
+    
 </head>
 
 <body>
-
+    <script src="jquery.js" defer></script>
     <!-- Menu content -->
     <aside class="menu">
         <nav class="menu__navbar">
@@ -41,7 +45,10 @@
                 <button type="button" class="menu__navbar__btn--close-menu" id="close-menu">
                     <span>Lukk</span>
                     <span class="close-icon">
-                        <img src="./styles/icons/close.svg" alt="close" >
+                        <svg viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="close-icon-fill" transform="rotate(45 7.1592 3.6862)" x="7.1592" y="3.6862" width="28" height="4" fill="#FDF9EF"/>
+                            <rect class="close-icon-fill" transform="rotate(-45 4.331 23.485)" x="4.331" y="23.485" width="28" height="4" fill="#FDF9EF"/>
+                        </svg>
                     </span>
                 </button>
             </div>
@@ -51,37 +58,37 @@
             <div class="menu__content__items">
                 <div class="menu__content__items__box">
                     <div class="menu__content__items__box__title">
-                        <h3 class="title-items">Skogtjenester</h3>
+                        <h3 class="title-items"><a href="/">Skogtjenester</a></h3>
                     </div>
                     <div class="menu__content__items__box__wr">
-                        <span class="item-option">Skogbruksplanlegging</span>
-                        <span class="item-option">Skogsdrift, hogst og tømmersalg</span>
-                        <span class="item-option">Hjelp til tømmeroppgjør</span>
-                        <span class="item-option">Skogkultur, planting og pleie</span>
-                        <span class="item-option">Frivillig vern av skog</span>
-                        <span class="item-option">Reguleringsplan for areal</span>
+                        <span class="item-option"><a href="/">Skogbruksplanlegging</a></span>
+                        <span class="item-option"><a href="/">Skogsdrift, hogst og tømmersalg</a></span>
+                        <span class="item-option"><a href="/">Hjelp til tømmeroppgjør</a></span>
+                        <span class="item-option"><a href="/">Skogkultur, planting og pleie</a></span>
+                        <span class="item-option"><a href="/">Frivillig vern av skog</a></span>
+                        <span class="item-option"><a href="/">Reguleringsplan for areal</a></span>
                     </div>
                 </div>
                 <div class="menu__content__items__box">
                     <div class="menu__content__items__box__title">
-                        <h3 class="title-items">Bli andelseier</h3>
+                        <h3 class="title-items"><a href="/">Bli andelseier</a></h3>
                     </div>
                     <div class="menu__content__items__box__wr">
-                        <span class="item-option">Skogeierlag</span>
-                        <span class="item-option">Skogforsikring</span>
-                        <span class="item-option">Tømmertransport</span>
-                        <span class="item-option">Kartlegging av eiendom</span>
+                        <span class="item-option"><a href="/">Skogeierlag</a></span>
+                        <span class="item-option"><a href="/">Skogforsikring</a></span>
+                        <span class="item-option"><a href="/">Tømmertransport</a></span>
+                        <span class="item-option"><a href="/">Kartlegging av eiendom</a></span>
                     </div>
                 </div>
                 <div class="menu__content__items__box">
                     <div class="menu__content__items__box__title">
-                        <h3 class="title-items">Bærekraft og miljø</h3>
+                        <h3 class="title-items"><a href="/">Bærekraft og miljø</a></h3>
                     </div>
                     <div class="menu__content__items__box__wr">
-                        <span class="item-option">Sertifisering av tømmer</span>
-                        <span class="item-option">Miljøkrav</span>
-                        <span class="item-option">Biologisk mangfold</span>
-                        <span class="item-option">Skog og klima</span>
+                        <span class="item-option"><a href="/">Sertifisering av tømmer</a></span>
+                        <span class="item-option"><a href="/">Miljøkrav</a></span>
+                        <span class="item-option"><a href="/">Biologisk mangfold</a></span>
+                        <span class="item-option"><a href="/">Skog og klima</a></span>
                     </div>
                 </div>
             </div>
@@ -90,19 +97,23 @@
                 <div class="menu__content__bottom__box">
                     <div class="menu__content__bottom__box__items">
                         <div class="menu__content__bottom__box__items__wr">
-                            <span class="title-items">Finn din skogbruksleder</span>
-                            <span class="title-items">Om Allskog</span>
+                            <span class="title-items"><a href="/">Finn din skogbruksleder</a></span>
+                            <span class="title-items"><a href="/">Om Allskog</a></span>
                         </div>
                         <div class="menu__content__bottom__box__items__wr">
-                            <span class="title-items">Arrangementer</span>
-                            <span class="title-items">Aktuelt</span>
+                            <span class="title-items"><a href="/">Arrangementer</a></span>
+                            <span class="title-items"><a href="/">Aktuelt</a></span>
                         </div>
                     </div>
                     <div class="menu__content__bottom__box__button">
-                        <button type="button" class="menu__content__bottom__box__button__login">
+                        <button type="button" class="menu__content__bottom__box__button__login" id="login-menu-btn">
                             <span>Logg inn</span>
                             <span class="menu__content__bottom__box__button__login--icon">
-                                <img src="./styles/icons/icon_profile_circled.svg" alt="login">
+                                <svg class="login-menu-svg" fill="none" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="login-menu-fill" d="m11 1c-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10 5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10z" stroke="#301B0A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                    <path class="login-menu-fill" d="m3.2715 17.346s2.229-2.8457 7.729-2.8457 7.7291 2.8457 7.7291 2.8457" stroke="#301B0A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                    <path class="login-menu-fill" d="m11.002 11c1.6569 0 3-1.3431 3-3 0-1.6568-1.3431-3-3-3-1.657 0-3 1.3432-3 3 0 1.6569 1.3431 3 3 3z" stroke="#301B0A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </svg>
                             </span>
                         </button>
                     </div>
@@ -122,14 +133,21 @@
                 <button type="button" class="navbar__actions__btn">
                     <span>Søk</span>
                     <span class="navbar__actions__btn__search--icon">
-                       <img src="./styles/icons/icon_search.svg" alt="search">
+                        <svg fill="none" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m16 16 5 5" stroke="#301B0A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            <path d="m1 9.5714c0 4.7339 3.8376 8.5715 8.5714 8.5715 2.371 0 4.5173-0.9628 6.069-2.5186 1.5465-1.5504 2.5025-3.69 2.5025-6.0529 0-4.7339-3.8376-8.5714-8.5715-8.5714s-8.5714 3.8376-8.5714 8.5714z" stroke="#301B0A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                        </svg>
                     </span>
                 </button>
                 <div class="navbar__actions__btn-secondary">
                     <button type="button" class="navbar__actions__btn-secondary__login" id="login">
                         <span>Logg inn</span>
                         <span class="navbar__actions__btn-secondary__login--icon">
-                            <img src="./styles/icons/icon_profile_circled.svg" alt="login" class="profile">
+                                <svg class="login-svg" fill="none" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="login-fill" d="m11 1c-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10 5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10z" stroke="#301B0A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                    <path class="login-fill" d="m3.2715 17.346s2.229-2.8457 7.729-2.8457 7.7291 2.8457 7.7291 2.8457" stroke="#301B0A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                    <path class="login-fill" d="m11.002 11c1.6569 0 3-1.3431 3-3 0-1.6568-1.3431-3-3-3-1.657 0-3 1.3432-3 3 0 1.6569 1.3431 3 3 3z" stroke="#301B0A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </svg>
                         </span>
                     </button>
                 </div>
@@ -137,7 +155,11 @@
                     <button type="button" class="navbar__actions__btn-primary__menu" id="open-menu">
                         <span>Meny</span>
                         <span class="navbar__actions__btn-primary__menu--icon">
-                            <img src="./styles/icons/hamburger.svg" alt="bars" class="hamburger">
+                            <svg class="menu-svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="menu-fill" x="1" y="13" width="28" height="4" fill="#FDF9EF"/>
+                                <rect class="menu-fill" x="1" y="3" width="28" height="4" fill="#FDF9EF"/>
+                                <rect class="menu-fill" x="1" y="23" width="28" height="4" fill="#FDF9EF"/>
+                            </svg>
                         </span>
                     </button>
                 </div>
@@ -148,9 +170,9 @@
 
     <main>
         <!-- Hero section -->
-        <section class="hero" >
+        <section class="hero">
             <div class="hero__container">
-                <div class="hero__container--center-img" title="Allskog"></div>
+                <div class="hero__container--center-img" title="Allskog" id="hero-img"></div>
                 <div class="hero__container__center">
 
                     <div class="hero__container__center__title">
@@ -272,7 +294,7 @@
             <!-- Wood section -->
             <article class="wood">
                 <div class="wood__container">
-                    <img src="./styles/images/wood.webp" alt="Wood illustrative image">
+                    <img src="./styles/images/wood-mobile.webp" alt="Wood illustrative image">
                     <div class="wood__container--box" id="wood-box">
                         <h3>Lyst til å bli andelseier i Allskog?</h3>
                         <p >Hvis du eier skog, kan du melde deg inn i Allskog. Da blir du medeier av skogfellesskapet i Norge.</p>
@@ -310,7 +332,7 @@
                 <div class="info02__container__wr">
                     <div class="info02__container__wr__box" id="info2-box-01">
                         <figure>
-                            <img src="./styles/images/pic01.webp" alt="Går med rekordoverskudd">
+                            <img src="./styles/images/pic01-mobile.webp" alt="Går med rekordoverskudd">
                         </figure>
                         <div class="info02__container__wr__box__desc">
                             <div class="info02__container__wr__box__desc--column">
@@ -323,7 +345,7 @@
                     </div>
                     <div class="info02__container__wr__box" id="info2-box-02">
                         <figure>
-                            <img src="./styles/images/pic02.webp" alt="Bruk rabatten din på kurs i Norsk PEFC Skogstandard">
+                            <img src="./styles/images/pic02-mobile.webp" alt="Bruk rabatten din på kurs i Norsk PEFC Skogstandard">
                         </figure>
                         <div class="info02__container__wr__box__desc">
                             <div class="info02__container__wr__box__desc--column">
@@ -336,7 +358,7 @@
                     </div>
                     <div class="info02__container__wr__box" id="info2-box-03">
                         <figure>
-                            <img src="./styles/images/pic03.webp" alt="Dette bør du vite om nye miljøhensyn i skogen">
+                            <img src="./styles/images/pic03-mobile.webp" alt="Dette bør du vite om nye miljøhensyn i skogen">
                         </figure>
                         <div class="info02__container__wr__box__desc">
                             <div class="info02__container__wr__box__desc--column">

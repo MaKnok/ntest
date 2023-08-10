@@ -473,7 +473,7 @@
         gap: 36px;
 
         &__wr{
-           
+        
            display: flex;
            flex-direction: column;
            align-items: flex-start;
@@ -550,7 +550,7 @@
 
                             @include tablet-desktop {
                                 font-size: 24px;
-                                 width: 298px;
+                                width: 298px;
                             } 
                         }
                     }
@@ -612,6 +612,11 @@
             gap: 8px;
             border-radius: 20px;
 
+            &:focus,
+            &:active {
+                border: 2px solid $color-text;
+            }
+
             & button {
                 display: flex;
                 padding: 16px 32px;
@@ -626,6 +631,19 @@
                 font-weight: 500;
                 line-height: normal;
                 color: $color-text;
+
+                &:hover{
+                    background-color: $color-text;
+                    color: $bg-color;
+                    border: 0;
+                }
+
+                &:focus,
+                &:active {
+                    border: 2px solid $color-text;
+                    background-color: transparent;
+                    color: $color-text;
+                }
             }
           }
         }
@@ -794,7 +812,7 @@
                             }
                             
                             & .local-date-wr {
-                               
+                            
                                 display: flex;
                                 align-items: flex-start;
                                 gap: 12px;
@@ -859,7 +877,7 @@
                         }
     
                         & img {
-                           
+                        
                             width: 36px;
                             height: 36px;
 
@@ -878,7 +896,16 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 8px;
-                border-radius: 20px;
+                border-radius: 16px;
+
+                &:focus,
+                &:active{
+                    border: 2px solid $color-text;
+                }
+
+                @include tablet-desktop {
+                    border-radius: 20px;
+                }
     
                 & button {
 
@@ -897,10 +924,23 @@
                     font-weight: 500;
                     line-height: normal;
 
+                    &:focus,
+                    &:active{
+                        border: 2px solid $color-text;
+                        background-color: transparent;
+                        color: $color-text;
+                    }
+
                     @include tablet-desktop {
                         padding: 16px 32px;
                         border-radius: 16px;
                         font-size: 18px;
+
+                        &:hover{
+                            background-color: $color-text;
+                            color: $bg-color;
+                        }
+
                     }
 
                 }

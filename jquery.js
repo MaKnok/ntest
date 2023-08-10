@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+    var heroImage = new Image();
+    heroImage.onload = function() {
+        // Image is loaded, you can use it now
+        $('#hero-img').attr('src', './styles/images/hero_img.webp');
+    };
+    heroImage.src = './styles/images/hero_img.webp'; 
+
     //MENU
     $('#open-menu').click(function(){
         $('.menu').addClass('active');
@@ -13,35 +20,82 @@ $(document).ready(function(){
     /*menu*/
     $('#open-menu').mouseover(function(){
         if($( window ).width() >= 768){
-            $('.hamburger').attr('src', './styles/icons/hamburger-hover.svg');
+            $('.menu-fill').attr('fill', '#301B0A');
+        }
+    });
+
+    $('#open-menu').mousedown(function(){
+        if($( window ).width() >= 768){
+            $('.menu-fill').attr('fill', '#301B0A');
         }
     });
 
     $('#open-menu').mouseleave(function(){
         if($( window ).width() >= 768){
-            $('.hamburger').attr('src', './styles/icons/hamburger.svg');
+            $('.menu-fill').attr('fill', '#FDF9EF');
+        }
+    });
+    
+    //MENU CLOSE ICON
+    $('#close-menu').mouseover(function(){
+        if($( window ).width() >= 768){
+            $('.close-icon-fill').attr('fill', '#301B0A');
         }
     });
 
+    $('#close-menu').mousedown(function(){
+        if($( window ).width() >= 768){
+            $('.close-icon-fill').attr('fill', '#FDF9EF');
+        }
+    });
+
+    $('#close-menu').mouseleave(function(){
+        if($( window ).width() >= 768){
+            $('.close-icon-fill').attr('fill', '#FDF9EF');
+        }
+    });
+
+
+    //MENU LOGIN
+    $('#login-menu-btn').mouseover(function(){
+        if($( window ).width() >= 768){
+            $('.login-menu-fill').attr('stroke', '#FDF9EF');
+        }
+    });
+
+    $('#login-menu-btn').mousedown(function(){
+        if($( window ).width() >= 768){
+            $('.login-menu-fill').attr('stroke', '#301B0A');
+        }
+    });
+
+    $('#login-menu-btn').mouseleave(function(){
+        if($( window ).width() >= 768){
+            $('.login-menu-fill').attr('stroke', '#301B0A');
+        }
+    });
+
+    
     /*login*/
 
     $('#login').mousedown(function(){
         if($( window ).width() >= 768){
-            $('.profile').attr('src', './styles/icons/icon_profile_circled.svg');
+            $('.login-fill').attr('stroke', '#301B0A');
         }
     });
 
     $('#login').mouseover(function(){
         if($( window ).width() >= 768){
-            $('.profile').attr('src', './styles/icons/icon_profile_circled_hover.svg');
+            $('.login-fill').attr('stroke', '#FDF9EF');
         }
     });
 
     $('#login').mouseleave(function(){
         if($( window ).width() >= 768){
-            $('.profile').attr('src', './styles/icons/icon_profile_circled.svg');
+            $('.login-fill').attr('stroke', '#301B0A');
         }
     });
+
 
     //HERO LINKS - TO BE IMPROVED - FUTURE IDS!
     $('#opt-link-01').mouseover(function(){
@@ -160,6 +214,7 @@ $(document).ready(function(){
         }
     });
 
+
     //WOOD ARTICLE
     $('#wood-box').mouseover(function(){
         $('.wood-img').attr('src', './styles/icons/arrow_hover_black.svg');
@@ -168,6 +223,7 @@ $(document).ready(function(){
     $('#wood-box').mouseleave(function(){
         $('.wood-img').attr('src', './styles/icons/arrow.svg');
     });
+
 
     //INFO01 ARROWS - TO BE IMPROVED - FUTURE IDS!
     $('#info1-box-01').mouseover(function(){
@@ -194,6 +250,7 @@ $(document).ready(function(){
         }
     });
 
+
     //INFO02 ARROWS - TO BE IMPROVED - FUTURE IDS!
     $('#info2-box-01').mouseover(function(){
         $('.info2-img-01').attr('src', './styles/icons/arrow_hover.svg');
@@ -219,6 +276,7 @@ $(document).ready(function(){
         $('.info2-img-03').attr('src', './styles/icons/arrow.svg');
     });
 
+
     //INFO03 ARROWS - TO BE IMPROVED - FUTURE IDS!
     $('#info3-box-01').mouseover(function(){
         $('.info3-img-01').attr('src', './styles/icons/arrow_hover_black.svg');
@@ -235,6 +293,7 @@ $(document).ready(function(){
     $('#info3-box-02').mouseleave(function(){
         $('.info3-img-02').attr('src', './styles/icons/arrow.svg');
     });
+
 
     //INFO03 TITLE CONTENT
     info03TitleContent();
